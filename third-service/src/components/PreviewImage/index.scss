@@ -1,0 +1,39 @@
+@import '@style/theme.scss';
+.component-preview{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.5);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    .close{
+        width: 48px;
+        height: 48px;
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        background: url('#{$ossHost}/close_no_border.png') no-repeat center center;
+        background-size: 32px 32px;
+        margin-top: 64px;
+    }
+    .img-list{
+        width: 686px;
+        height: 904px;
+        .swiper-content{
+            width: 100%;
+            height: 100%;
+            .swiper-item{
+                width: 686px !important;
+                height: 904px;
+                .img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

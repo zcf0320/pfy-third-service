@@ -1,0 +1,32 @@
+.bar {
+    background: #fff;
+    margin: 0 32px;
+    padding-bottom: 16px;
+    &-title {
+        font-size: 32px;
+        font-weight: bo;
+        color: #333333;
+    }
+    &-out {
+        position: relative;
+        margin: 24px 0 0;
+        width: 612px;
+        height: 12px;
+        background: rgba(204, 204, 204, 0.3);
+        border-radius: 7px;
+        overflow: hidden;
+    }
+    &-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 12px;
+        border-radius: 7px;
+        background: linear-gradient(
+            140deg,
+            #6851fe 0%,
+            #607cfd 37%,
+            #52c4fa 100%
+        );
+    }
+}

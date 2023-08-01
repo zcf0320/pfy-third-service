@@ -1,0 +1,154 @@
+@import '@style/theme.scss';
+.info{
+    width: 100%;
+    height: 100%;
+    background: $page-bg;
+    flex-direction: column;
+    align-items: center;
+    .m-t-32{
+        margin-top: 32px;
+    }
+    .center{
+        flex: 1;
+        overflow: scroll;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .creat-user{
+        width: 100%;
+        height: 52px;
+        padding: 8px 32px;
+        color: $color-999;
+        font-size: 20px;
+    }
+    .item{
+        width: 100%;
+        height: 112px;
+        background: $white;
+        padding: 0 32px;
+        .item-content{
+            width: 100%;
+            height: 112px;
+            justify-content: space-between;
+            align-items: center;
+            
+            box-sizing: border-box;
+            &.border{
+                border-bottom: 1px solid $border;
+            }
+        }
+
+        .edit{
+            color: $color-main-yellow;
+            font-size: 20px;
+        }
+        // &.border{
+        //     border-bottom: 1px solid $border;
+        // }
+        .left{
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            box-sizing: border-box;
+            .label{
+                width: 120px;
+                font-size: 28px;
+                margin-right: 108px;
+                &.common{
+                    width: 400px;
+                }
+            }
+            .input{
+                width: 250px;
+                height: 95%;
+                border: none;
+                font-size: 32px;
+                text-align: right;
+                &.code{
+                    width: 220px;
+                }
+            }
+            .select{
+                font-size: 32px;
+                color: $color-333;
+                .select-item{
+                    align-items: center;
+                    .select-dot{
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        border: 1px solid #999999;
+                        align-items: center;
+                        justify-content: space-around;
+                        margin-right: 16px;
+                        margin-left: 70px;
+                        &.active{
+                            border: 1px solid #FEBD44;
+                        }
+                        .dot{
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                            background: #FEBD44;
+                        }
+
+                    }
+                }
+            }
+        }
+        .close{
+            width: 30px;
+            height: 30px;
+        }
+        .send{
+            width:156px;
+            height:46px;
+            border-radius:23px;
+            border:1px solid $color-main-yellow;
+            color: $color-main-yellow;
+            font-size: 24px;
+            align-items: center;
+            justify-content: space-around;
+            &.disable{
+                border:1px solid $disable;
+                color: $disable;
+            }
+        }
+    }
+    .test{
+        width: 441px;
+        height: 88px;
+        background: rgba(204, 204, 204, 0.6);
+        border-radius: 44px;        
+        align-items: center;
+        justify-content: space-around;
+        color: $white;
+        background: linear-gradient(166deg, #FDC195 0%, #FF4638 100%);
+        margin: 64px auto;
+        font-size: 32px;
+        &.disable{
+            background: rgba(204, 204, 204, 0.6);
+        }
+    }
+}
+.none{
+    width: 100%;
+    height: 100%;
+    background: $white;
+    align-items: center;
+    justify-content: space-around;
+    .none-content{
+        align-items: center;
+        flex-direction: column;
+        font-size: 28px;
+        color: $color-666;
+    }
+    .none-bg{
+        width: 524px;
+        height: 414px;
+        background: url('#{$ossHost}/hpv_no_bg.png') no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 48px;
+    }
+}

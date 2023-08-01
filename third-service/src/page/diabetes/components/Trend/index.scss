@@ -1,0 +1,19 @@
+.diabetes-trend {
+    margin: 0 auto -20px;
+    position: relative;
+    .container {
+        width: 650px;
+        height: 380px;
+        margin-left: -18px;
+    }
+    .diabetes-time{
+        font-size: 24px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 24px;
+        position: absolute;
+        top: -24px;
+        left: 152px;
+    }
+}

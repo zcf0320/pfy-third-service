@@ -1,0 +1,365 @@
+.blood-sugar {
+    &-card {
+        width: 686px;
+        background: #ffffff;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        border-radius: 12px;
+        padding: 30px 32px;
+        margin: 32px auto;
+    }
+    &-title {
+        font-size: 32px;
+        font-weight: bold;
+        color: #333333;
+    }
+    .top {
+        justify-content: space-between;
+        align-items: center;
+        .time {
+            font-size: 24px;
+            color: #333333;
+        }
+    }
+    .none {
+        font-size: 28px;
+        color: #999999;
+        text-align: center;
+        margin: 92px auto 64px;
+    }
+    .record {
+        width: 440px;
+        height: 88px;
+        background: linear-gradient(166deg, #fdc195 0%, #ff4638 100%);
+        border-radius: 44px;
+        text-align: center;
+        line-height: 88px;
+        margin: 0 auto;
+        font-size: 32px;
+        color: #ffffff;
+        margin-bottom: 16px;
+        margin-top: 32px;
+    }
+    .sugar {
+        color: #333333;
+        justify-content: flex-start;
+        align-items: flex-end;
+        .num {
+            font-size: 56px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .unit {
+            font-size: 32px;
+        }
+        .time {
+            font-size: 28px;
+        }
+        .line {
+            width: 2px;
+            height: 30px;
+            background: #979797;
+            margin: 0 18px 0 24px;
+        }
+    }
+    .conclusion {
+        font-size: 28px;
+        color: #333333;
+        margin: 32px 0 8px;
+    }
+    .text {
+        font-size: 28px;
+        color: #999999;
+        line-height: 40px;
+    }
+    .trend {
+        font-size: 24px;
+        color: #febd44;
+    }
+    &-box {
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &-icon {
+        flex: 0 0 33%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 32px;
+
+        .drug {
+            background: url('../../../assert//diabets-drug.svg');
+            background-size: 100% 100%;
+        }
+        .food {
+            background: url('../../../assert//diabets-food.svg');
+            background-size: 100% 100%;
+        }
+        .sport {
+            background: url('../../../assert//diabets-sport.svg');
+            background-size: 100% 100%;
+        }
+        .today {
+            background: url('../../../assert//diabets-today.svg');
+            background-size: 100% 100%;
+        }
+        .file {
+            background: url('../../../assert//diabets-file.svg');
+            background-size: 100% 100%;
+        }
+    }
+    &-img {
+        width: 64px;
+        height: 64px;
+    }
+    &-text {
+        font-size: 24px;
+        color: #333333;
+        margin-top: 16px;
+    }
+}
+.sugar-form1 {
+    margin: 32px auto 0;
+    &-card {
+        width: 686px;
+        background: #ffffff;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        border-radius: 12px;
+        padding: 0 32px 32px;
+        margin: 32px auto;
+    }
+    &-title {
+        font-size: 32px;
+        color: #333333;
+    }
+    &-box {
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &-item {
+        flex: 0 0 33%;
+        margin-top: 32px;
+        .active {
+            border: 1px solid #ff5a47;
+            color: #ff5a47;
+        }
+        &:nth-child(-n+3){
+            margin-top: 0;
+        }
+    }
+    &-tag {
+        width: 186px;
+        height: 60px;
+        border-radius: 8px;
+        border: 1px solid #cccccc;
+        font-size: 24px;
+        color: #999999;
+        line-height: 60px;
+        text-align: center;
+    }
+    &-tips {
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 28px;
+        &-icon {
+            width: 24px;
+            height: 24px;
+            background: url('../../../assert/diabets-tips.svg');
+            background-size: 100% 100%;
+        }
+        &-text {
+            font-size: 24px;
+            color: #febd44;
+            margin-left: 16px;
+            margin-top: -3px;
+            line-height: 32px;
+        }
+    }
+    &-picker {
+        border-radius: 12px 12px 0px 0px;
+        overflow: hidden;
+        .am-picker-popup-header {
+            width: 750px;
+            height: 96px;
+            box-shadow: 0px -1px 0px 0px rgba(204, 204, 204, 0.5);
+            padding: 34px 32px;
+        }
+        .am-picker-popup-header-left {
+            font-size: 28px;
+            color: #666666;
+        }
+        .am-picker-popup-header-right {
+            width: 88px;
+            height: 44px;
+            background: linear-gradient(166deg, #fdc195 0%, #fd665a 100%);
+            border-radius: 8px;
+            font-size: 28px;
+            color: #ffffff;
+            line-height: 44px;
+            text-align: center;
+        }
+        .am-picker-popup-item {
+            padding: 0;
+        }
+    }
+    .am-list-item {
+        padding-left: 0;
+        width: 622px;
+        line-height: 92px;
+        height: 92px;
+        .am-list-line {
+            padding-right: 0;
+            .am-list-extra {
+                color: #ccc;
+                // padding-top: 6px;
+                font-size: 28px;
+                line-height: normal;
+                padding: 0;
+            }
+
+            .am-list-arrow {
+                background: url('../../../assert/next.png');
+                background-size: 100% 100%;
+                width: 32px;
+                height: 32px;
+                margin: 0;
+            }
+            .am-list-content {
+                color: #333;
+                font-size: 28px;
+            }
+        }
+    }
+    &-items {
+        justify-content: space-between;
+        align-items: center;
+        font-size: 28px;
+        // margin: 0 32px;
+        line-height: 92px;
+        height: 92px;
+
+        // border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+        &-left {
+            color: #333333;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &-right {
+            color: #cccccc;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+    .num-input {
+        width: 180px;
+        margin-left: 20px;
+        text-align: right;
+    }
+    .num-right {
+        width: 200px;
+    }
+    &-line {
+        width: 100%;
+        height: 1px;
+        background: rgba(204, 204, 204, 0.3);
+    }
+    &-content {
+        width: 686px;
+        background: #ffffff;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        border-radius: 12px;
+        padding: 0 32px 32px;
+        margin: 0 auto 32px;
+    }
+    &-btn {
+        width: 440px;
+        height: 88px;
+        background: rgba(204, 204, 204, 0.6);
+        border-radius: 44px;
+        text-align: center;
+        line-height: 88px;
+        color: #ffffff;
+        font-size: 32px;
+        margin: 32px auto 0;
+    }
+    .btn-active {
+        background: linear-gradient(166deg, #fdc195 0%, #ff4638 100%);
+    }
+    .black {
+        .am-list-extra {
+            color: #333 !important;
+        }
+    }
+    .blood-sugar-tcard{
+        width: 686px;
+        margin: 32px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-l,&-r{
+            flex: 1;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0 36px;
+            height: 200px;
+            box-shadow: 0px 6px 20px 0px rgba(68,96,225,0.2);
+            border-radius: 12px;
+            .tcard-title{
+                font-size: 28px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #333333;
+                line-height: 28px;
+            }
+        }
+        &-l{
+            background: #fff url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/diabetes/trend-bg.png') no-repeat bottom right;
+            background-size: 200px 106px;
+            margin-right: 32px;
+            .tcard-l-img{
+                width: 96px;
+                height: 96px;
+                background: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/diabetes/trend.png') no-repeat center center;
+                background-size: 96px 96px;
+            }
+        }
+        &-r{
+            background: #fff url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/diabetes/statistics-bg.png') no-repeat bottom right;
+            background-size: 128px 96px;
+            .tcard-r-img{
+                width: 96px;
+                height: 96px;
+                background: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/diabetes/statistics.png') no-repeat center center;
+                background-size: 96px 96px;
+            }
+        }
+    }
+    .no-data{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-img{
+          background: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/diabetes/no-data.png') no-repeat center center;
+          background-size: 182px 200px;
+          width: 182px;
+          height: 200px;
+          margin-top: 32px;
+        }
+        &-text{
+          font-size: 24px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #999999;
+          line-height: 24px;
+          margin-top: 32px;
+        }
+      }
+}

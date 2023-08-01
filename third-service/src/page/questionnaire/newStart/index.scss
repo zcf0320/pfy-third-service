@@ -1,0 +1,110 @@
+@import "@style/theme.scss";
+.page-new-start {
+    width: 100%;
+    min-height: 100%;
+    background: $white;
+    flex-direction: column;
+    align-items: center;
+    .center {
+        // flex: 1;
+        // overflow: scroll;
+        .content {
+            height: 960px;
+            background: url("https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/start_bg.png");
+            background-size: 100% 100%;
+            color: $white;
+            position: relative;
+            font-size: 32px;
+            padding: 84px 80px 0px;
+            line-height: 52px;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            .title {
+                font-size: 36px;
+                line-height: 36px;
+                margin-bottom: 44px;
+            }
+            .title-food {
+                font-size: 36px;
+                line-height: 36px;
+                text-align: center;
+            }
+            .logo {
+                width: 450px;
+                height: 302px;
+                margin: 0 auto;
+            }
+            .logo-food {
+                width: 450px;
+                height: 302px;
+                margin: 159px auto 0 auto;
+            }
+            .common {
+                width: 100%;
+                margin-top: 16px;
+                text-align: left;
+                font-size: 32px;
+                line-height: 52px;
+                &.frist {
+                    margin-top: 74px;
+                }
+                .number {
+                    color: #e94c40;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    .test {
+        width: 686px;
+        height: 88px;
+        border-radius: 44px;
+        background: #ffd065;
+        color: $white;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 32px;
+        margin-top: 32px;
+    }
+    .tips {
+        width: 670px;
+        font-size: 24px;
+        line-height: 36px;
+        color: $color-999;
+        margin: 32px 0 60px;
+        letter-spacing: 1px;
+    }
+}
+.none {
+    width: 100%;
+    height: 100%;
+    background: $white;
+    align-items: center;
+    justify-content: space-around;
+    .none-content {
+        align-items: center;
+        flex-direction: column;
+        font-size: 28px;
+        color: $color-666;
+    }
+    .none-bg {
+        width: 524px;
+        height: 414px;
+        background: url("#{$ossHost}/hpv_no_bg.png") no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 48px;
+    }
+}
+.notice {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    background: rgba(255, 208, 101, 0.1);
+    font-size: 24px;
+    color: #ffd065;
+}

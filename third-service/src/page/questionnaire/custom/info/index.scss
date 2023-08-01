@@ -1,0 +1,101 @@
+@import '../../../../index.scss';
+@import '@style/theme.scss';
+.page-custom-info{
+    width: 100%;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0E937B;
+    .start-title{
+        font-size: 64px;
+        line-height: 1;
+        color: $white;
+        font-weight: bold;
+        margin-top: 64px;
+        text-align: center;
+    }
+    .next{
+        width: 32px;
+        height: 32px;
+    }
+    .info-content{
+        width: 608px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 12px 0px rgba(204, 204, 204, 0.5);
+        border-radius: 12px;
+        padding: 0 32px;
+        padding-bottom: 48px;
+        margin-top: 86px;
+        .content-title{
+            width: 100%;
+            height: 92px;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 32px;
+            color: $color-333;
+            font-weight: bold;
+        }
+        .content-item{
+            width: 100%;
+            height: 96px;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 28px;
+            color: $color-333;
+            .select{
+                font-size: 32px;
+                color: $color-333;
+                .select-item{
+                    align-items: center;
+                    .select-dot{
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        border: 1px solid #999999;
+                        align-items: center;
+                        justify-content: space-around;
+                        margin-right: 16px;
+                        margin-left: 70px;
+                        &.disable{
+                            border: 1px solid #999999 !important;
+                        }
+                        .dot{
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                            background: #FEBD44;
+                        }
+
+                    }
+                }
+            }
+            .right{
+                width: 300px;
+                font-size: 28px;
+                color: $color-333;
+                text-align: right;
+                align-items: center;
+                justify-content: flex-end;
+                .placeholder{
+                    color: #ccc;
+                }
+            }
+        }
+        .submit{
+            width: 512px;
+            height: 80px;
+            background: #0E937B;
+            box-shadow: 0px 0px 12px 0px rgba(204, 204, 204, 0.5);
+            border-radius: 40px;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 28px;
+            color: $white;
+            margin-top: 48px;
+            &.disable{
+                background: #E0E0E0 !important;
+            }
+        }
+
+    }
+}

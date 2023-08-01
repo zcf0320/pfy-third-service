@@ -1,0 +1,228 @@
+.page-appointment {
+    width: 100%;
+    height: 100%;
+    background: #fbfbfb;
+    padding-top: 32px;
+    .m-t-32 {
+        margin-top: 32px;
+    }
+    .save {
+        width: 686px;
+        height: 88px;
+        background: #fe9a51;
+        border-radius: 44px;
+        font-size: 32px;
+        color: #fff;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-top: 64px;
+
+        &.disable {
+            background: #cccccc;
+            opacity: 0.4;
+            color: #999;
+        }
+    }
+    .common-info {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 0 32px 5px;
+        margin: 0 32px 32px;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+
+        .common-title {
+            width: 100%;
+            height: 88px;
+            border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+            align-items: center;
+            font-size: 32px;
+            color: #333333;
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+        .common-item {
+            justify-content: space-between;
+            margin-bottom: 32px;
+            .left {
+                font-size: 28px;
+                line-height: 1;
+                color: #333333;
+            }
+            .right {
+                font-size: 28px;
+                line-height: 1;
+                color: #666666;
+            }
+        }
+    }
+    .service-info {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 0 32px;
+        margin: 32px;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+
+        .service-item {
+            width: 100%;
+            padding: 32px 0;
+            // height: 92px;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+            align-items: center;
+            .left {
+                font-size: 28px;
+                color: #333333;
+                line-height: 1;
+            }
+            .right {
+                font-size: 28px;
+                line-height: 1;
+                color: #333333;
+                align-items: center;
+                &.disbale {
+                    color: #666666;
+                }
+                .next {
+                    width: 32px;
+                    height: 32px;
+                    background: url("../../../assert/next_gray.png");
+                    background-size: 32px 32px;
+                    margin-left: 16px;
+                }
+                .picker {
+                    width: 400px;
+                    text-align: right;
+                }
+                .input {
+                    width: 100%;
+                    height: 100%;
+                    font-size: 28px;
+                    color: #333333;
+                    text-align: right;
+                    &.code {
+                        width: 200px;
+                    }
+                }
+                .textarea {
+                    font-size: 20px;
+                    color: #333333;
+                    text-align: right;
+                    textarea {
+                        font-size: 28px;
+                        color: #333333;
+                        text-align: right;
+                    }
+                }
+                .send-message {
+                    width: 160px;
+                    height: 52px;
+                    color: #ff775d;
+                    border-radius: 24px;
+                    justify-content: space-around;
+                    align-items: center;
+                    border: 2px solid #ff775d;
+                    margin-left: 32px;
+                    font-size: 24px;
+                    &.disable {
+                        color: #999999;
+                        border: 1px solid #ccc;
+                    }
+                }
+                .picker-select {
+                    width: 100%;
+                    font-size: 28px;
+                    color: #333333;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    word-break: break-all;
+
+                    &.disable {
+                        font-size: 28px;
+                        color: #ccc;
+                    }
+                }
+                .radio {
+                    display: flex;
+                    align-items: center;
+                    &:first-child {
+                        margin-right: 30px;
+                    }
+                    img {
+                        width: 36px;
+                        height: 36px;
+                        margin-right: 10px;
+                    }
+                }
+                .input {
+                    min-height: 28px;
+                    max-height: 80px;
+                    flex: 1;
+                    input {
+                        text-align: right;
+                        font-size: 28px;
+                        font-family: PingFangSC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #666666;
+                    }
+                    .am-list-line {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .material-info {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 32px;
+        margin: 0 32px 32px;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        .material-title {
+            width: 100%;
+            height: 60px;
+            border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+            align-items: center;
+            font-size: 32px;
+            color: #333333;
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+        .material-wrap {
+            margin-bottom: 20px;
+        }
+        .material-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 32px;
+            .left {
+                font-size: 28px;
+                line-height: 1;
+                color: #333333;
+                .red {
+                    color: #ff775d;
+                    font-size: 24px;
+                    width: 100px;
+                    white-space: nowrap;
+                }
+                .color-999 {
+                    color: #999;
+                    font-size: 24px;
+                    width: 100px;
+                    white-space: nowrap;
+                }
+            }
+            .right {
+                font-size: 28px;
+                line-height: 1;
+                color: #febd44;
+                text-decoration: underline;
+            }
+        }
+        .content {
+            font-size: 24px;
+            color: #cccccc;
+            margin-bottom: 20px;
+        }
+    }
+}

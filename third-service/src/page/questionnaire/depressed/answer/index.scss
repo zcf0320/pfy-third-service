@@ -1,0 +1,179 @@
+@import '@style/theme.scss';
+.page-labor-answer{
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/depressed/depressed-bg1.png') center center no-repeat;
+    background-size: 100% 100%;
+    padding: 50px 32px 108px;
+    .depressed-top{
+        width: 672px;
+        height: 304px;
+        background: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/depressed/depressed-top.png') center center no-repeat;
+        background-size: 100% 100%;
+        padding: 110px 32px 0;
+        margin-bottom: 48px;
+        >p{
+            font-size: 28px;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: bold;
+            color: #666666;
+            line-height: 40px;
+            &.depressed-index{
+                font-size: 72px;
+                font-family: PingFangSC-Semibold, PingFang SC;
+                font-weight: 600;
+                color: #666666;
+                line-height: 72px;
+                text-align: center;
+                margin: 0;
+                padding: 38px 0 0;
+            }
+            >span{
+                color: #FEBD44;
+            }
+        }
+    }
+    .hra-content{
+        width: 686px;
+        background: $white;
+        border-radius: 12px;
+        padding: 48px;
+        align-items: center;
+        flex-direction: column;
+        .question-item{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            .question{
+                width: 100%;
+                font-size: 32px;
+                font-weight: bold;
+                color: #333333;
+                line-height: 44px;
+            }
+            .answer-list{
+                margin-top: 48px;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                .answer-item{
+                    width: 100%;
+                    height: 124px;
+                    border-radius: 12px;
+                    border: 2px solid #CCCCCC;
+                    align-items: center;
+                    padding: 0 32px;
+                    margin-bottom: 32px;
+                    .letter{
+                        display: block;
+                        width: 64px;
+                        height: 64px;
+                        border-radius: 50%;
+                        border: 1px solid #CCCCCC;
+                        font-size: 32px;
+                        color: #333333;
+                        line-height: 64px;
+                        text-align: center;
+                        margin-right: 24px;
+                    }
+                    .answer-text{
+                        font-size: 28px;
+                        color: #333333;
+                        flex: 1;
+                    }
+                    &.active{
+                        background: rgba(100, 108, 207, 0.1);
+                        border: 2px solid #646CCF;
+                        .letter{
+                            background: #646CCF;
+                            border: none;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .action-item{
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 64px;
+        z-index: 9;
+        .action-pre{
+            width: 280px;
+            height: 100px;
+            background: #646CCF;
+            border-radius: 50px;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: PingFangSC-Regular, PingFang SC;
+            color: #fff;
+            line-height: 100px;
+            letter-spacing: 6px;
+            text-align: center;
+            border: 4px solid #2C58BC;
+            box-sizing: border-box;
+        }
+        .action-pre-l{
+            width: 468px;
+            height: 100px;
+            background: #646CCF;
+            border-radius: 50px;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: PingFangSC-Regular, PingFang SC;
+            color: #fff;
+            line-height: 100px;
+            letter-spacing: 6px;
+            text-align: center;
+            border: 4px solid #2C58BC;
+            box-sizing: border-box;
+        }
+        .action-submit{
+            width: 280px;
+            height: 100px;
+            background: #fff;
+            border-radius: 50px;
+            font-size: 40px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: bold;
+            color: #646CCF;
+            line-height: 100px;
+            letter-spacing: 6px;
+            text-align: center;
+            border: 4px solid #2C58BC;
+            box-sizing: border-box;
+            &.disable{
+                background: rgba(204, 204, 204, 0.62);
+                color: #fff;
+                border: none;
+            }
+        }
+    }
+    .depressed-bottom{
+        width: 100vw;
+        height: 182px;
+        background: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/depressed/depressed-bottom.png') center center no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 32px;
+        &-p{
+            width: calc(100% - 64px);
+            height: 46px;
+            background: rgba(255, 255, 255, 0.4);
+            font-size: 24px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #8564F5;
+            line-height: 46px;
+            text-align: center;
+            position: absolute;
+            bottom: 36px;
+        }
+    }
+}

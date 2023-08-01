@@ -1,0 +1,243 @@
+@import '@style/theme.scss';
+.result{
+    background: $page-bg;
+    flex-direction: column;
+    align-items: center;
+    .center{
+        flex: 1;
+        overflow: scroll;
+        .common{
+            width: 686px;
+            min-height: 644px;
+            position: relative;
+            box-shadow:0px 4px 20px 0px rgba(254,154,81,0.1);
+            border-radius:8px;
+            padding: 64px 48px 32px;
+            color: $color-main-yellow;
+            background: $white;
+            font-size: 32px;
+            line-height: 80px;
+            margin-top: 120px;
+            .bg{
+                width: 249px;
+                height: 322px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            .success-bg{
+                width: 174px;
+                height: 100px;
+                position: absolute;
+                top: 0;
+                left: 230px;
+            }
+            .title{
+                font-weight: bold;
+                font-size: 40px;
+            }
+        }
+        .suggest{
+            width: 686px;
+            height: 2127px;
+            box-shadow:0px 4px 20px 0px rgba(254,154,81,0.1);
+            border-radius:8px;
+            padding: 32px 48px;
+            align-items: center;
+            flex-direction: column;
+            color: $color-main-yellow;
+            font-size: 32px;
+            line-height: 80px;
+            position: relative;
+            background: $white;
+            margin-bottom: 120px;
+            .top-bg{
+                width: 257px;
+                height: 40px;
+                position: absolute;
+                left: 221px;
+                top: 32px;
+            }
+            .title{
+                font-size: 40px;
+                font-weight: bold;
+                margin: 30px 0 40px;
+            }
+            .food{
+                width: 605px;
+                height: 527px;
+                margin: 32px 0;
+            }
+            .suggest-item{
+                color: $color-333;
+                font-size: 32px;
+                line-height: 80px;
+                .lable{
+                    color: $color-main-yellow;
+                }
+            }
+        }
+    }
+}
+.page-result{
+    width: 100%;
+    min-height: 100%;
+    background: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/result_2_bg.png');
+    background-size: 100% 100%;
+    flex-direction: column;
+    .content{
+        flex: 1;
+        padding-top: 162px;
+        align-items: center;
+        flex-direction: column;
+        .bg{
+            width: 704px;
+            min-height: 800px;
+            background: #FE9A51;
+            border-radius: 25px;
+            padding-bottom: 15px;
+            position: relative;
+            .result{
+                width: 686px;
+                min-height: 800px;
+                background: #FFFFFF;
+                border-radius: 25px;
+                padding: 23px 32px 23px 0;
+                margin: -15px auto 0 auto;
+                .result-bg{
+                    width: 333px;
+                    height: 359px;
+                }
+                .top{
+                    padding-top: 97px;
+                    .text{
+                        font-size: 40px;
+                        font-weight: 500;
+                        color: #FFD065;
+                        line-height: 80px;
+                        text-align: center;
+                    }
+                    .text-imgA{
+                        width: 360px;
+                        height: 285px;
+                        background: url(https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/1_A.png) no-repeat center center;
+                        background-size: contain;
+                        margin-left: -20px;
+                        margin-top: 37px;
+                    }
+                    .text-imgB{
+                        width: 360px;
+                        height: 285px;
+                        background: url(https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/1_B.png) no-repeat center center;
+                        background-size: contain;
+                        margin-left: -20px;
+                        margin-top: 37px;
+                    }
+                    .text-imgC{
+                        width: 360px;
+                        height: 285px;
+                        background: url(https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/1_C.png) no-repeat center center;
+                        background-size: contain;
+                        margin-left: -20px;
+                        margin-top: 37px;
+                    }
+                    .text-imgD{
+                        width: 360px;
+                        height: 285px;
+                        background: url(https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/1_D.png) no-repeat center center;
+                        background-size: contain;
+                        margin-left: -20px;
+                        margin-top: 37px;
+                    }
+                }
+                .bottom{
+                    padding-left: 32px;
+                    text-align: left;
+                    font-size: 32px;
+                    color: $color-333;
+                    margin-top: 32px;
+                    line-height: 64px;
+                }
+            }
+            .title{
+                width: 300px;
+                height: 64px;
+                position: absolute;
+                left: 194px;
+                top: -32px;
+                z-index: 20;
+                background: url('../../../assert/result_title_bg.png');
+                background-size: 100% 100%;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 32px;
+                color: $white;
+            }
+            .claw{
+                width: 95px;
+                height: 88px;
+                position: absolute;
+                right: 20px;
+                bottom: 15px;
+            }
+        }
+        
+        .bg-bottom{
+            margin-top: 46px;
+            width: 704px;
+            height: 2127px;
+            background: #FE9A51;
+            border-radius: 25px;
+            position: relative;
+            .suggest{
+                width: 686px;
+                height: 2127px;
+                box-shadow:0px 4px 20px 0px rgba(254,154,81,0.1);
+                border-radius: 25px;
+                padding: 32px 48px;
+                align-items: center;
+                flex-direction: column;
+                font-size: 32px;
+                line-height: 80px;
+                position: relative;
+                background: $white;
+                margin-bottom: 120px;
+                color: #333333;
+                position: absolute;
+                top: -14px;
+                left: 50%;
+                transform: translateX(-50%);
+                .top-bg{
+                    width: 257px;
+                    height: 40px;
+                    position: absolute;
+                    left: 221px;
+                    top: 32px;
+                }
+                .title{
+                    font-size: 40px;
+                    line-height: 40px;
+                    font-weight: bold;
+                    margin: 30px 0 40px;
+                }
+                .food{
+                    width: 605px;
+                    height: 527px;
+                    margin: 32px 0;
+                }
+                .suggest-item{
+                    color: $color-333;
+                    font-size: 32px;
+                    line-height: 80px;
+                    .lable{
+                        color: #FFD065;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        height: 122px;
+    }
+}

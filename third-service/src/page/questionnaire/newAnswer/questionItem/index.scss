@@ -1,0 +1,413 @@
+@import '@style/theme.scss';
+.component-question{
+    padding: 0 32px;
+    flex-direction: column;
+    .question-list{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .question-item{
+                width: 327px;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 32px;
+                &.active{
+                    .question-item-content{
+                        border: 2px solid #FFD065;
+                    }
+                    .text{
+                        color: #FFD065;
+                        margin-top: 32px;
+                    }
+                }
+                .question-item-content{
+                    width: 327px;
+                    height: 285px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 4px 20px 0px rgba(255, 208, 101, 0.1);
+                    border-radius: 12px;
+                    align-items: center;
+                    justify-content: space-around;
+                    .i-2-0-0-0{
+                        width: 288px;
+                        height: 220px;
+                    }
+                    .i-2-0-0-1{
+                        width: 279px;
+                        height: 192px;
+                    }
+                    .i-2-0-0-2{
+                        width: 285px;
+                        height: 227px;
+                    }
+                    .i-2-0-0-3{
+                        width: 291px;
+                        height: 207px;
+                    }
+                    .i-2-0-1-0{
+                        width: 288px;
+                        height: 220px;
+                    }
+                    .i-2-0-1-1{
+                        width: 279px;
+                        height: 192px;
+                    }
+                    .i-2-0-1-2{
+                        width: 287px;
+                        height: 255px;
+                    }
+                    .i-2-0-5-0{
+                        width: 299px;
+                        height: 200px;
+                    }
+                    .i-2-0-5-1{
+                        width: 259px;
+                        height: 253px;
+                    }
+                    .i-2-0-5-2{
+                        width: 200px;
+                        height: 205px;
+                    }
+                    .i-2-0-5-3{
+                        width: 254px;
+                        height: 193px;
+                    }
+
+                }
+                .text{
+                    font-size: 28px;
+                    line-height: 28px;
+                    color: $color-333;
+                    margin-top: 32px;
+                    text-align: center;
+                }
+        }
+    }
+    .question-img{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+        .img-content{
+            width: 686px;
+            height: 310px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 20px 0px rgba(255, 208, 101, 0.1);
+            border-radius: 12px;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 64px;
+            .i-2-0-2{
+                width: 420px;
+                height: 290px;
+            }
+            .i-2-0-3{
+                width: 411px;
+                height: 290px;
+            }
+            .i-2-0-4{
+                width: 529px;
+                height: 290px;
+            }
+            .i-3-0-0{
+                width: 459px;
+                height: 290px;
+            }
+            .i-3-0-1{
+                width: 350px;
+                height: 290px;
+            }
+            .i-3-0-2{
+                width: 286px;
+                height: 290px;
+            }
+            .i-3-0-3{
+                width: 335px;
+                height: 290px;
+            }
+            .i-3-0-4{
+                width: 260px;
+                height: 290px;
+            }
+            .i-3-0-5{
+                width: 293px;
+                height: 290px;
+            }
+            .i-3-0-6{
+                width: 266px;
+                height: 290px;
+            }
+            .i-3-0-7{
+                width: 328px;
+                height: 290px;
+            }
+            .i-3-0-8{
+                width: 184px;
+                height: 290px;
+            }
+            .i-4-0-0{
+                width: 318px;
+                height: 290px;
+            }
+            .i-4-0-1{
+                width: 359px;
+                height: 290px;
+            }
+            .i-4-0-2{
+                width: 369px;
+                height: 290px;
+            }
+            .i-4-0-3{
+                width: 391px;
+                height: 290px;
+            }
+            .i-4-0-4{
+                width: 393px;
+                height: 290px;
+            }
+            .i-4-0-5{
+                width: 397px;
+                height: 290px;
+            }
+            .i-4-0-6{
+                width: 394px;
+                height: 290px;
+            }
+            .i-4-0-7{
+                width: 405px;
+                height: 290px;
+            }
+            .i-4-0-8{
+                width: 454px;
+                height: 290px;
+            }
+            .i-4-0-9{
+                width: 259px;
+                height: 290px;
+            }
+            .i-4-0-10{
+                width: 417px;
+                height: 290px;
+            }
+            .i-4-0-11{
+                width: 259px;
+                height: 290px;
+            }
+            .i-1-0-0{
+                width: 507px;
+                height: 290px;
+            }
+            .i-1-0-1{
+                width: 376px;
+                height: 290px;
+            }
+            .i-1-0-2{
+                width: 430px;
+                height: 290px;
+            }
+            .i-1-0-3{
+                width: 399px;
+                height: 290px;
+            }
+            .i-1-0-4{
+                width: 534px;
+                height: 290px;
+            }
+            .i-1-0-5{
+                width: 314px;
+                height: 290px;
+            }
+            .i-1-0-6{
+                width: 349px;
+                height: 290px;
+            }
+            .i-1-0-7{
+                width: 452px;
+                height: 290px;
+            }
+            .i-1-0-8{
+                width: 375px;
+                height: 290px;
+            }
+            .i-1-0-9{
+                width: 309px;
+                height: 290px;
+            }
+            .i-1-0-10{
+                width: 325px;
+                height: 290px;
+            }
+            .i-1-0-11{
+                width: 442px;
+                height: 290px;
+            }
+            .i-1-0-12{
+                width: 396px;
+                height: 290px;
+            }
+            .i-1-0-13{
+                width: 338px;
+                height: 290px;
+            }
+            .i-1-0-14{
+                width: 325px;
+                height: 290px;
+            }
+            .i-1-0-15{
+                width: 346px;
+                height: 290px;
+            }
+            .i-1-0-16{
+                width: 326px;
+                height: 290px;
+            }
+            .i-1-0-17{
+                width: 339px;
+                height: 290px;
+            }
+            .i-1-0-18{
+                width: 323px;
+                height: 290px;
+            }
+            .i-1-0-19{
+                width: 374px;
+                height: 290px;
+            }
+            .i-1-0-20{
+                width: 395px;
+                height: 290px;
+            }
+            .i-1-0-21{
+                width: 337px;
+                height: 290px;
+            }
+            .i-1-0-22{
+                width: 337px;
+                height: 290px;
+            }
+            .i-1-0-23{
+                width: 356px;
+                height: 290px;
+            }
+            .i-1-0-24{
+                width: 339px;
+                height: 290px;
+            }
+            .i-1-0-25{
+                width: 461px;
+                height: 290px;
+            }
+            .i-1-0-26{
+                width: 387px;
+                height: 290px;
+            }
+            .i-1-0-27{
+                width: 334px;
+                height: 290px;
+            }
+            .i-1-0-28{
+                width: 279px;
+                height: 288px;
+            }
+            .i-1-0-29{
+                width: 327px;
+                height: 290px;
+            }
+            .i-1-0-30{
+                width: 431px;
+                height: 290px;
+            }
+            .i-1-0-31{
+                width: 310px;
+                height: 290px;
+            }
+            .i-1-0-32{
+                width: 371px;
+                height: 290px;
+            }
+            .i-1-0-33{
+                width: 383px;
+                height: 290px;
+            }
+            .i-1-0-34{
+                width: 421px;
+                height: 290px;
+            }
+            .i-1-0-35{
+                width: 243px;
+                height: 290px;
+            }
+            .i-1-0-36{
+                width: 324px;
+                height: 290px;
+            }
+            .i-1-0-37{
+                width: 399px;
+                height: 290px;
+            }
+            .i-1-0-38{
+                width: 281px;
+                height: 290px;
+            }
+            .i-1-0-39{
+                width: 346px;
+                height: 290px;
+            }
+            .i-1-1-0{
+                width: 418px;
+                height: 290px;
+            }
+            .i-1-1-1{
+                width: 401px;
+                height: 290px;
+            }
+            .i-1-1-2{
+                width: 344px;
+                height: 290px;
+            }
+            .i-1-1-3{
+                width: 394px;
+                height: 290px;
+            }
+            .i-1-1-4{
+                width: 304px;
+                height: 290px;
+            }
+            .i-1-1-5{
+                width: 384px;
+                height: 290px;
+            }
+            .i-1-1-6{
+                width: 357px;
+                height: 289px;
+            }
+            .i-1-1-7{
+                width: 340px;
+                height: 290px;
+            }
+            .i-1-1-8{
+                width: 397px;
+                height: 290px;
+            }
+            .i-1-1-9{
+                width: 429px;
+                height: 290px;
+            }
+        }
+        .item{
+            width: 590px;
+            height: 96px;
+            background: #F8F9F9;
+            border-radius: 4px;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 28px;
+            color: $color-333;
+            margin-bottom: 48px;
+            &.active{
+                
+                background: #FFD065;
+                color: $white;
+                // background: rgba(255, 208, 101, 0.1);
+            }
+        }
+    }
+}

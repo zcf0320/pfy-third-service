@@ -1,0 +1,152 @@
+@import '@style/theme.scss';
+.page-labor-answer{
+    width: 100%;
+    min-height: 100%;
+    background: #0E937B;
+    align-items: center;
+    flex-direction: column;
+    .hra-title{
+        font-size: 64px;
+        color: $white;
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 48px;
+        margin: 64px 0 20px;
+    }
+    .hra-sub-title{
+        color: $white;
+        line-height: 24px;
+        font-size: 24px;
+        letter-spacing: 4px;
+    }
+    .dot-list{
+        align-items: center;
+        margin: 34px 0 52px;
+        .dot{
+            width: 24px;
+            height: 24px;
+            background: $white;
+            border-radius: 4px;
+            opacity: 0.5;
+            margin-left: 38px;
+            transform: rotate(45deg);
+            &:nth-child(1){
+                margin-left: 0;
+                
+            }
+        }
+    }
+    .hra-content{
+        width: 686px;
+        background: $white;
+        border-radius: 12px;
+        padding: 48px;
+        align-items: center;
+        flex-direction: column;
+        .question-item{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            .question{
+                width: 100%;
+                font-size: 32px;
+                font-weight: bold;
+                color: #333333;
+                line-height: 44px;
+            }
+            .answer-list{
+                margin-top: 48px;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                .answer-item{
+                    width: 100%;
+                    height: 124px;
+                    border-radius: 12px;
+                    border: 2px solid #CCCCCC;
+                    align-items: center;
+                    padding: 0 32px;
+                    margin-bottom: 32px;
+                    .letter{
+                        display: block;
+                        width: 64px;
+                        height: 64px;
+                        border-radius: 50%;
+                        border: 1px solid #CCCCCC;
+                        font-size: 32px;
+                        color: #333333;
+                        line-height: 64px;
+                        text-align: center;
+                        margin-right: 24px;
+                    }
+                    .answer-text{
+                        font-size: 28px;
+                        color: #333333;
+                        flex: 1;
+                    }
+                    &.active{
+                        background: rgba(14, 147, 123, 0.1);
+                        border: 2px solid #0E937B;
+                        .letter{
+                            background: #0E937B;
+                            border: none;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .action-item{
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 64px;
+        .action-pre{
+            width: 248px;
+            height: 88px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            font-size: 40px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            color: #018779;
+            line-height: 88px;
+            letter-spacing: 6px;
+            text-align: center;
+        }
+        .action-pre-l{
+            width: 336px;
+            height: 88px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            font-size: 40px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            color: #018779;
+            line-height: 88px;
+            letter-spacing: 6px;
+            text-align: center;
+        }
+        .action-submit{
+            width: 336px;
+            height: 88px;
+            background: #FEBD44;
+            border-radius: 12px;
+            font-size: 40px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: bold;
+            color: #FFFFFF;
+            line-height: 88px;
+            letter-spacing: 6px;
+            text-align: center;
+            &.disable{
+                background: rgba(204, 204, 204, 0.62);
+            }
+        }
+    }
+    .labor-bottom{
+        margin-top: 32px;
+        background: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/laborDay/laborDay-bgBottom.png') no-repeat;
+        background-size: 100% 100%;
+        width: 750px;
+        height: 274px;
+    }
+}

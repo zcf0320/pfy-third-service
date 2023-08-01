@@ -1,0 +1,109 @@
+.diabetes-statics-card{
+  width: 686px;
+  padding: 32px 0;
+  box-shadow: 0px 6px 20px 0px rgba(68,96,225,0.2);
+  border-radius: 12px;
+  background-color: #fff;
+  margin: 32px auto 0;
+  .card-title{
+    font-size: 32px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: bold;
+    color: #333333;
+    line-height: 32px;
+    padding: 0 32px;
+  }
+  .card-center{
+    width: 100%;
+    box-shadow: 0px 1px 0px 0px rgba(204,204,204,0.5);
+    padding: 0 32px;
+    position: relative;
+    .sum-count{
+      font-size: 24px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #666666;
+      line-height: 24px;
+      position: absolute;
+      top: 100px;
+      right: 58px;
+      span{
+        font-size: 56px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: bold;
+        color: #333333;
+        line-height: 56px;
+        margin-left: 12px;
+      }
+    }
+  }
+  .mountNode{
+    width: 100%;
+    height: 414px;
+  }
+  .chart-content{
+    &-top{
+      font-size: 32px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 400;
+      color: #333333;
+      line-height: 56px;
+      >span{
+        font-size: 56px;
+        font-weight: bold;
+      }
+    }
+    &-bottom{
+      font-size: 28px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #333333;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+  .card-bottom{
+    display: flex;
+    &-l,&-r{
+      width: 50%;
+      padding: 24px 0 0;
+      box-sizing: border-box;
+      .card-bottom-title{
+        font-size: 28px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: bold;
+        color: #333333;
+        line-height: 28px;
+        padding-left: 32px;
+      }
+      .card-bottom-chart{
+        width: 344px;
+        height: 312px;
+      }
+    }
+    &-l{
+      border-right: 1px solid rgba(204,204,204,0.5);
+    }
+  }
+  .no-data{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-img{
+      background: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/diabetes/no-data.png') no-repeat center center;
+      background-size: 182px 200px;
+      width: 182px;
+      height: 200px;
+      margin-top: 32px;
+    }
+    &-text{
+      font-size: 24px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #999999;
+      line-height: 24px;
+      margin-top: 32px;
+    }
+  }
+}

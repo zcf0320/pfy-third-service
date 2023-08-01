@@ -1,0 +1,103 @@
+.decompression-video {
+    width: 100%;
+    height: 100%;
+    padding: 240px 32px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    .video {
+      width: 100%;
+      max-height: 580px;
+    }
+    &-title {
+      font-size: 32px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #333333;
+      line-height: 44px;
+    }
+    &-subtitle {
+      font-size: 28px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #393939;
+      line-height: 40px;
+      margin-top: 24px;
+      margin-bottom: 150px;
+    }
+  }
+  .end-bg {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(39, 48, 65, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    .video-end {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 600px;
+      padding: 32px;
+      background: #394454;
+      border-radius: 24px 24px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-title {
+        font-size: 32px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 32px;
+      }
+      &-subtitle {
+        font-size: 28px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 40px;
+        margin-top: 48px;
+      }
+      &-item {
+        width: 100%;
+        height: 140px;
+        border-radius: 12px;
+        border: 1px solid #747a9c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 0;
+        margin-top: 32px;
+        &-title {
+          font-size: 28px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #ffffff;
+          line-height: 28px;
+        }
+        &-subtitle {
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #cccccc;
+          line-height: 24px;
+          font-size: 24px;
+        }
+      }
+      &-close {
+        width: 32px;
+        height: 32px;
+        background: url('https://user-center-images-1301127519.cos.ap-shanghai.myqcloud.com/mall_close.png') no-repeat center
+          center;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+      }
+    }
+  }
+  

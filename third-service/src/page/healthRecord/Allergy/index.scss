@@ -1,0 +1,84 @@
+@import '@style/theme.scss';
+.component-past{
+    flex-direction: column;
+    align-items: center;
+    .past{
+        width: 100%;
+        padding: 0 32px;
+        .past-title{
+            font-size: 32px;
+            color: #333;
+            line-height: 1;
+            margin: 32px 0;
+            font-weight: bold;
+        }
+        .past-list{
+            flex-wrap: wrap;
+            .past-item{
+                width: 186px;
+                height: 60px;
+                border-radius: 8px;
+                border: 1px solid #CCCCCC;
+                font-size: 24px;
+                color: #333;
+                align-items: center;
+                justify-content: space-around;
+                margin-right: 64px;
+                margin-bottom: 32px;
+                .past-item-content{
+                    width: 144px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    text-align: center;
+                }
+                &.active{
+                    
+                    border: 1px solid #FF775D;
+                    color: #FF5A47;
+                }
+                &:nth-child(3n){
+                    margin-right: 0;
+                }
+            }
+        }
+        .add-content{
+            width: 686px;
+            height: 76px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            border: 1px solid #CCCCCC;
+            padding-left: 32px;
+            justify-content: space-between;
+            align-items: center;
+            .left{
+                width: 450px;
+                height: 80%;
+                border: 0px;
+                outline:none;
+                font-size: 28px;
+                color: #333;
+            }
+            .right{
+                align-items: center;
+                .del{
+                    width: 32px;
+                    height: 32px;
+                    background: url('#{$ossHost}/del.png') no-repeat;
+                    background-size: 100% 100%;
+                    margin-right: 16px;
+                }
+                .add{
+                    width: 120px;
+                    height: 28px;
+                    font-size: 28px;
+                    line-height: 1;
+                    color: #333;
+                    text-align: center;
+                    border-left: 1px solid rgba(204,204,204,0.5)
+                }
+            }
+        }
+
+    }
+}

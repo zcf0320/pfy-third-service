@@ -1,0 +1,54 @@
+@import '@style/theme.scss';
+.page-labor-result{
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+    flex-direction: column;
+    .labor-result-top{
+        width: 750px;
+        background: #0E937B;
+        padding: 64px 32px 112px;
+        .result-top-score{
+            width: 100%;
+            height: 548px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 48px 42px;
+            &-bg{
+                background: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/laborDay/laborDay-result-top.png') no-repeat;
+                background-size: 100% 100%;
+                width: 600px;
+                height: 328px;
+            }
+            &-detail{
+                font-size: 40px;
+                font-weight: bold;
+                color: #333333;
+                line-height: 56px;
+                text-align: center;
+                margin-top: 32px;
+                .detail-result{
+                    color: #0E937B;
+                    font-size: 64px;
+                    line-height: 92px;
+                }
+            }
+        }
+        .result-top-tip{
+            margin-top: 48px;
+            width: 100%;
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 48px 32px;font-size: 32px;
+            color: #333333;
+            line-height: 44px;
+            font-family: PingFangSC-Regular, PingFang SC;
+        }
+    }
+    .labor-result-bottom{
+        background: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/laborDay/laborDay-bgBottom.png') no-repeat;
+        background-size: 100% 100%;
+        width: 750px;
+        height: 274px;
+    }
+}

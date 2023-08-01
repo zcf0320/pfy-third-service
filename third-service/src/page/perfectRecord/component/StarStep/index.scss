@@ -1,0 +1,81 @@
+.healthy-step {
+    width: 100%;
+    height: 108px;
+    padding: 22px 32px 0 54px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px 0px rgba(68, 96, 225, 0.2);
+    .healthy-step-line {
+        width: 100%;
+        height: 24px;
+        background: url(../../../../assert/star-line.png) no-repeat center center;
+        background-size: 100% 100%;
+        position: relative;
+        &-active {
+            position: absolute;
+            width: calc(100% - 10px);
+            height: 8px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url(../../../../assert/star-line-active.png) no-repeat center center;
+            background-size: 100% 100%;
+            z-index: 2;
+        }
+        &-active-bg {
+            position: absolute;
+            // width: calc(100% - 10px);
+            width: 25%;
+            height: 8px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #febd44;
+            z-index: 1;
+            transition: all 0.3s;
+        }
+        .star-item {
+            position: absolute;
+            z-index: 3;
+            top: -4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(-50%);
+            &-img-1 {
+                width: 32px;
+                height: 32px;
+                background: url(../../../../assert/healthy-edit.png) no-repeat center center;
+                background-size: 100% 100%;
+            }
+            &-img-2 {
+                width: 32px;
+                height: 32px;
+                background: url(../../../../assert/star-default.png) no-repeat center center;
+                background-size: 100% 100%;
+            }
+            &-img-3 {
+                width: 32px;
+                height: 32px;
+                background: url(../../../../assert/star-active.png) no-repeat center center;
+                background-size: 100% 100%;
+            }
+            &-text {
+                font-size: 24px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #666666;
+                line-height: 24px;
+                margin-top: 14px;
+            }
+            &:nth-of-type(3) {
+                left: 25%;
+            }
+            &:nth-of-type(4) {
+                left: 50%;
+            }
+            &:nth-of-type(5) {
+                left: 75%;
+            }
+        }
+    }
+}

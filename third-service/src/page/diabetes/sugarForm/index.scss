@@ -1,0 +1,235 @@
+.sugar-form {
+    margin: 32px auto 0;
+    &-card {
+        width: 686px;
+        background: #ffffff;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        border-radius: 12px;
+        padding: 32px;
+        margin: 0 auto 32px;
+    }
+    &-title {
+        font-size: 32px;
+        color: #333333;
+    }
+    &-box {
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &-item {
+        flex: 0 0 33%;
+        margin-top: 32px;
+        .active {
+            border: 1px solid #ff5a47;
+            color: #ff5a47;
+        }
+    }
+    &-tag {
+        width: 186px;
+        height: 60px;
+        border-radius: 8px;
+        border: 1px solid #cccccc;
+        font-size: 24px;
+        color: #999999;
+        line-height: 60px;
+        text-align: center;
+    }
+    &-tips {
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 28px;
+        &-icon {
+            width: 24px;
+            height: 24px;
+            background: url('../../../assert/diabets-tips.svg');
+            background-size: 100% 100%;
+        }
+        &-text {
+            font-size: 24px;
+            color: #febd44;
+            margin-left: 16px;
+            margin-top: -3px;
+            line-height: 32px;
+        }
+    }
+    &-picker {
+        border-radius: 12px 12px 0px 0px;
+        overflow: hidden;
+        .am-picker-popup-header {
+            width: 750px;
+            height: 96px;
+            box-shadow: 0px -1px 0px 0px rgba(204, 204, 204, 0.5);
+            padding: 34px 32px;
+        }
+        .am-picker-popup-header-left {
+            font-size: 28px;
+            color: #666666;
+        }
+        .am-picker-popup-header-right {
+            width: 88px;
+            height: 44px;
+            background: linear-gradient(166deg, #fdc195 0%, #fd665a 100%);
+            border-radius: 8px;
+            font-size: 28px;
+            color: #ffffff;
+            line-height: 44px;
+            text-align: center;
+        }
+        .am-picker-popup-item {
+            padding: 0;
+        }
+    }
+    .am-list-item {
+        padding-left: 0;
+        width: 622px;
+        line-height: 92px;
+        height: 92px;
+        .am-list-line {
+            padding-right: 0;
+            .am-list-extra {
+                color: #ccc;
+                padding-top: 6px;
+                font-size: 28px;
+            }
+
+            .am-list-arrow {
+                background: url('../../../assert/next.png');
+                background-size: 100% 100%;
+                width: 32px;
+                height: 32px;
+                margin: -5px 0 0 0;
+            }
+            .am-list-content {
+                color: #333;
+                font-size: 28px;
+            }
+        }
+    }
+    &-items {
+        justify-content: space-between;
+        align-items: center;
+        font-size: 28px;
+        // margin: 0 32px;
+        line-height: 92px;
+        height: 92px;
+
+        // border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+        &-left {
+            color: #333333;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &-right {
+            color: #cccccc;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+    .num-input {
+        width: 180px;
+        margin-left: 20px;
+        text-align: right;
+    }
+    .num-right {
+        width: 200px;
+    }
+    &-line {
+        width: 100%;
+        height: 1px;
+        background: rgba(204, 204, 204, 0.3);
+    }
+    &-content {
+        width: 686px;
+        background: #ffffff;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        border-radius: 12px;
+        padding: 0 32px;
+        margin: 0 auto 32px;
+    }
+    &-btn {
+        width: 440px;
+        height: 88px;
+        background: rgba(204, 204, 204, 0.6);
+        border-radius: 44px;
+        text-align: center;
+        line-height: 88px;
+        color: #ffffff;
+
+        font-size: 32px;
+        position: fixed;
+        bottom: 64px;
+        left: 158px;
+    }
+    .btn-active {
+        background: linear-gradient(166deg, #fdc195 0%, #ff4638 100%);
+    }
+    .black {
+        .am-list-extra {
+            color: #333 !important;
+        }
+    }
+}
+.tips-modal {
+    width: 608px;
+    height: 398px;
+    background: #ffffff;
+    border-radius: 12px;
+    .am-modal-content {
+        padding-top: 0;
+        .am-modal-body {
+            overflow: hidden;
+            padding: 0;
+            .tips-text {
+                font-size: 36px;
+                font-weight: bold;
+                color: #333333;
+                width: 608px;
+                height: 96px;
+                box-shadow: 0px 1px 0px 0px rgba(204, 204, 204, 0.5);
+                line-height: 96px;
+                text-align: center;
+            }
+            .comfirm {
+                font-size: 32px;
+                color: #333333;
+                margin: 32px auto 28px;
+                width: 492px;
+            }
+            .grey {
+                font-size: 24px;
+                color: #999999;
+            }
+            .btn-box {
+                justify-content: space-between;
+                align-items: center;
+                .btn {
+                    width: 224px;
+                    height: 82px;
+                    box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+                    border-radius: 40px;
+                    font-weight: bold;
+                    color: #ffffff;
+                    line-height: 82px;
+                    margin: 48px;
+                }
+                .submit {
+                    background: linear-gradient(
+                        166deg,
+                        #fdc195 0%,
+                        #fd665a 100%
+                    );
+                }
+                .cancel {
+                    background: linear-gradient(
+                        180deg,
+                        #e9e5e5 0%,
+                        #cccccc 100%
+                    );
+                }
+            }
+        }
+    }
+}

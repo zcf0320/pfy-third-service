@@ -1,0 +1,28 @@
+.step2-long-tag {
+    .tag-box {
+        flex-direction: column;
+        margin: 32px 0 64px;
+        .tag {
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 24px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 32px;
+            width: 540px;
+            height: 60px;
+            line-height: 60px;
+        }
+        .active {
+            color: #ff775d;
+            border: 1px solid #ff775d;
+        }
+        .title {
+            margin: 0 16px 0 70px;
+        }
+        .note {
+            font-weight: normal;
+            color: #999;
+        }
+    }
+}

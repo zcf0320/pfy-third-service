@@ -1,0 +1,207 @@
+@import "@style/theme.scss";
+.page-info {
+    width: 100%;
+    min-height: 100%;
+    background: $page-bg;
+    flex-direction: column;
+    align-items: center;
+    .center {
+        width: 100vw;
+        height: 960px;
+        background: url("https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/start_bg.png");
+        background-size: 100% 100%;
+        color: $white;
+        padding: 0 50px;
+        padding-top: 140px;
+        flex-direction: column;
+        align-items: center;
+        .logo {
+            width: 450px;
+            height: 302px;
+            margin-top: 30px;
+        }
+        .info-content {
+            width: 644px;
+            height: auto;
+            background: rgba(254, 154, 81, 0.3);
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 22px 48px 54px;
+            border-radius: 25px;
+            .item {
+                .item-sex {
+                    align-items: center;
+                    margin-top: 32px;
+                    margin-bottom: 10px;
+
+                    .sex {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .sex-title {
+                        margin: 0 88px 0 32px;
+                        font-size: 28px;
+                        font-weight: bold;
+                        color: $white;
+                    }
+                    .sex-item {
+                        width: 80px;
+                        height: 80px;
+                        align-items: center;
+                        justify-content: space-around;
+                        border-radius: 50%;
+                        &.man {
+                            margin-right: 80px;
+                        }
+                        &.active {
+                            border: 1px solid #fff;
+                            .sex-item-centent {
+                                background: rgba(255, 255, 255, 1);
+                            }
+                        }
+                        .sex-item-centent {
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 50%;
+                            background: rgba(255, 255, 255, 0.3);
+                            align-items: center;
+                            justify-content: space-around;
+                            .sex-icon {
+                                width: 40px;
+                                height: 53px;
+                            }
+                        }
+                    }
+                }
+                .title {
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 32px;
+                    color: $white;
+                    margin: 32px 0;
+                }
+                .input-content {
+                    align-items: center;
+                    background: rgba(255, 255, 255, 0.2);
+                    border-radius: 12px;
+                    border: 1px solid rgba(255, 255, 255, 0.8);
+                    height: 88px;
+                    .icon {
+                        width: 28px;
+                        height: 34px;
+                        margin: 0 32px;
+                    }
+                }
+                .text {
+                    flex: 1;
+                    height: 98%;
+                    border: none;
+                    font-size: 28px;
+                    background: none;
+                    display: block;
+                    color: $white;
+                }
+                input::-webkit-input-placeholder {
+                    color: rgba(255, 255, 255, 0.6);
+                }
+                input::-moz-placeholder {
+                    /* Mozilla Firefox 19+ */
+                    color: rgba(255, 255, 255, 0.6);
+                }
+                input:-moz-placeholder {
+                    /* Mozilla Firefox 4 to 18 */
+                    color: rgba(255, 255, 255, 0.6);
+                }
+                input:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: rgba(255, 255, 255, 0.6);
+                }
+            }
+        }
+    }
+    .proto {
+        align-items: center;
+        font-size: 24px;
+        color: $color-999;
+        .area {
+            padding-top: 32px;
+            padding-right: 16px;
+        }
+        .proto-text {
+            margin-top: 32px;
+        }
+        .select-content {
+            width: 26px;
+            height: 26px;
+            border: 2px solid #ffd065;
+            border-radius: 50%;
+            position: relative;
+            .select {
+                width: 16px;
+                height: 12px;
+                position: absolute;
+                left: 4px;
+                top: 5px;
+            }
+            &.active {
+                background: #ffd065;
+            }
+            margin-right: 7px;
+        }
+        .text {
+            color: #ffd065;
+        }
+    }
+    .answer {
+        width: 686px;
+        height: 88px;
+        background: $color-main-yellow;
+        background: #ffd065;
+        color: $white;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 44px;
+        font-size: 32px;
+        font-weight: bold;
+        margin: 32px 0;
+        margin-bottom: 0;
+        // &.less{
+        //     margin-top: 294px;
+        // }
+        &.disable {
+            background: rgba(204, 204, 204, 0.5);
+        }
+    }
+}
+.none {
+    width: 100%;
+    height: 100%;
+    background: $white;
+    align-items: center;
+    justify-content: space-around;
+    .none-content {
+        align-items: center;
+        flex-direction: column;
+        font-size: 28px;
+        color: $color-666;
+    }
+    .none-bg {
+        width: 524px;
+        height: 414px;
+        background: url("#{$ossHost}/hpv_no_bg.png") no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 48px;
+    }
+}
+.notice {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    background: rgba(255, 208, 101, 0.1);
+    font-size: 24px;
+    color: #ffd065;
+}

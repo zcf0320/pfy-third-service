@@ -1,0 +1,28 @@
+.picker-content {
+    // height: 274px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+
+    .am-picker-col-item-selected {
+        font-size: 40px;
+    }
+
+    .picker-view {
+        width: 100%;
+        height: 100%;
+
+        .am-picker-col-indicator::before {
+            display: none;
+        }
+
+        .am-picker-col-indicator::after {
+            display: none;
+        }
+
+        .picker-list {
+            height: 100%;
+        }
+    }
+}

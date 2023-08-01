@@ -1,0 +1,30 @@
+@import '@style/theme.scss';
+.page-phone-index{
+    width: 100%;
+    min-height: 100%;
+    background: #F6F6F6;
+    align-items: center;
+    flex-direction: column;
+    .phone-index{
+        flex: 1;
+        .phone-image{
+            width: 686px;
+            height: 1080px;
+            background-image: url('#{$ossHost}/phone_line.png');
+            background-size: 686px 1080px;
+            margin-top: 48px;
+        }
+    }
+    .phone-bottom{
+        width: 440px;
+        height: 88px;
+        background: linear-gradient(166deg, #FDC195 0%, #FF4638 100%);
+        border-radius: 44px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 32px;
+        color: #fff;
+        margin-top: 48px;
+        margin-bottom: 64px;
+    }
+}

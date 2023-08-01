@@ -1,0 +1,392 @@
+.diabetes {
+    .flex {
+        display: flex;
+    }
+    &-card {
+        width: 686px;
+        background: #ffffff;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        border-radius: 12px;
+        margin: 32px auto 0;
+        &-must {
+            background: url('../../../assert/must.png');
+            background-size: 100% 100%;
+            width: 10px;
+            height: 10px;
+            margin-left: 8px;
+        }
+        &-next {
+            background: url('../../../assert/next.png');
+            background-size: 100% 100%;
+            width: 32px;
+            height: 32px;
+            margin: -4px 0 0 8px;
+        }
+    }
+    &-item {
+        justify-content: space-between;
+        align-items: center;
+        font-size: 28px;
+        margin: 0 32px;
+        line-height: 92px;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+        &-left {
+            color: #333333;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        &-right {
+            color: #cccccc;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-shrink: 0;
+        }
+    }
+    &-modal {
+        // height: 564px; //464
+        .am-modal-content {
+            border-radius: 12px 12px 0px 0px !important;
+        }
+        .submit-active {
+            width: 440px;
+            height: 88px;
+            border-radius: 44px;
+            font-size: 32px;
+            color: #ffffff;
+            line-height: 88px;
+            text-align: center;
+            margin: 32px auto 64px;
+            background: linear-gradient(166deg, #fdc195 0%, #ff4638 100%);
+        }
+        &-header {
+            height: 96px;
+            box-shadow: 0px 1px 0px 0px rgba(204, 204, 204, 0.5);
+            border-radius: 12px 12px 0px 0px;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 32px;
+            .left {
+                color: #666666;
+            }
+            .comfirm {
+                width: 88px;
+                height: 44px;
+                background: linear-gradient(166deg, #fdc195 0%, #fd665a 100%);
+                border-radius: 8px;
+                color: #fff;
+
+                line-height: 44px;
+            }
+        }
+        .close {
+            width: 32px;
+            height: 32px;
+            background: url('../../../assert/cancel.png');
+            background-size: 100% 100%;
+        }
+        &-disaster {
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 32px;
+            font-size: 32px;
+            font-weight: bold;
+            color: #333333;
+            line-height: 96px;
+        }
+        &-body {
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            .disaster-item {
+                flex: 0 0 33%;
+
+                &-content {
+                    width: 186px;
+                    height: 60px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    line-height: 60px;
+                    font-size: 24px;
+                    color: #333333;
+                    margin: 32px auto 0;
+                }
+            }
+            .active {
+                border: 1px solid #ff775d;
+                color: #ff5a47;
+            }
+        }
+        &-box {
+            width: 686px;
+            height: 76px;
+            background: #ffffff;
+            border-radius: 8px;
+            border: 1px solid #cccccc;
+            margin: 32px auto 0;
+            justify-content: space-between;
+            align-items: center;
+            .input {
+                width: 454px;
+                height: 28px;
+                color: #333;
+                margin-left: 32px;
+            }
+            &-right {
+                position: relative;
+                .clear {
+                    background: url('../../../assert/close.png');
+                    background-size: 100% 100%;
+                    width: 32px;
+                    height: 32px;
+                    position: absolute;
+                    top: -15px;
+                    right: 156px;
+                }
+                .ok {
+                    width: 140px;
+                    height: 28px;
+                    line-height: 28px;
+                    position: absolute;
+                    top: -15px;
+                    right: 0;
+                    color: #333333;
+                    border-left: 1px solid rgba(204, 204, 204, 0.5);
+                    padding: 0 32px;
+                }
+            }
+        }
+    }
+    &-tag {
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        &-item {
+            flex: 0 0 33%;
+            margin-bottom: 32px;
+
+            .tag-active {
+                margin: 0 auto;
+                width: 186px;
+                height: 60px;
+                border-radius: 8px;
+                border: 1px solid #ff775d;
+                font-size: 24px;
+                color: #ff5a47;
+                line-height: 60px;
+                text-align: center;
+            }
+        }
+    }
+
+    &-picker {
+        border-radius: 12px 12px 0px 0px;
+        overflow: hidden;
+        .am-picker-popup-header {
+            width: 750px;
+            height: 96px;
+            box-shadow: 0px -1px 0px 0px rgba(204, 204, 204, 0.5);
+            padding: 34px 32px;
+        }
+        .am-picker-popup-header-left {
+            font-size: 28px;
+            color: #666666;
+        }
+        .am-picker-popup-header-right {
+            width: 88px;
+            height: 44px;
+            background: linear-gradient(166deg, #fdc195 0%, #fd665a 100%);
+            border-radius: 8px;
+            font-size: 28px;
+            color: #ffffff;
+            line-height: 44px;
+            text-align: center;
+        }
+        .am-picker-popup-item {
+            padding: 0;
+        }
+    }
+    .am-list-item {
+        padding-left: 0;
+        width: 622px;
+        .am-list-line {
+            padding-right: 0;
+            .am-list-extra {
+                color: #333;
+                font-size: 28px;
+            }
+            .am-list-arrow {
+                background: url('../../../assert/next.png');
+                background-size: 100% 100%;
+                width: 32px;
+                height: 32px;
+                margin: -5px 0 0 0;
+            }
+            .am-list-content {
+                color: #333;
+                font-size: 28px;
+            }
+        }
+    }
+    .num-input {
+        width: 180px;
+        margin-left: 20px;
+        text-align: right;
+    }
+    .num-right {
+        width: 200px;
+    }
+    .upload {
+        margin: 0 32px;
+        padding-bottom: 32px;
+    }
+    &-submit {
+        width: 440px;
+        height: 88px;
+        background: rgba(204, 204, 204, 0.6);
+        border-radius: 44px;
+        font-size: 32px;
+        color: #ffffff;
+        line-height: 88px;
+        text-align: center;
+        margin: 32px auto 64px;
+    }
+
+    .item-bb0 {
+        border-bottom: 0;
+    }
+    .submit-save {
+        margin: 48px auto 64px;
+    }
+    .item-mt32 {
+        margin-top: -32px;
+    }
+    .submit-btn-active {
+        background: linear-gradient(166deg, #fdc195 0%, #ff4638 100%);
+    }
+    .show-text {
+        font-size: 28px;
+        color: #666666;
+        line-height: 40px;
+        width: 400px;
+        margin: 36px 0;
+        text-align: right;
+    }
+    .color666 {
+        color: #666;
+    }
+    .show-line {
+        width: 622px;
+        height: 1px;
+        background: rgba(204, 204, 204, 0.3);
+        margin: 0 auto;
+    }
+    .upload-box {
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        &-img {
+            width: 176px;
+            height: 176px;
+        }
+    }
+    .upload {
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &-list {
+        .am-list-extra {
+            color: #ccc !important;
+        }
+    }
+    &-list-block {
+        .am-list-arrow {
+            display: none !important;
+        }
+    }
+    .am-image-picker-list {
+        padding: 0 32px 32px;
+    }
+    // .am-image-picker-item-content::after {
+    //     content: '';
+    //     width: 12px;
+    //     height: 12px;
+    //     position: absolute;
+    //     right: 0px;
+    //     top: 0px;
+    //     text-align: right;
+    //     vertical-align: top;
+    //     z-index: 2;
+    //     background-size: 100% 100%;
+    //     background: url('../../../assert/delete.png') no-repeat;
+    // }
+    // .am-flexbox {
+    //     flex-wrap: wrap;
+    // }
+}
+.tips-modal {
+    width: 608px;
+    height: 398px;
+    background: #ffffff;
+    border-radius: 12px;
+    .am-modal-body {
+        overflow-x: hidden;
+    }
+    .am-modal-content {
+        padding-top: 0;
+        .am-modal-body {
+            overflow: hidden;
+
+            .tips {
+                font-size: 36px;
+                font-weight: bold;
+                color: #333333;
+                width: 608px;
+                height: 96px;
+                box-shadow: 0px 1px 0px 0px rgba(204, 204, 204, 0.5);
+                line-height: 96px;
+                text-align: center;
+            }
+            .comfirm {
+                font-size: 32px;
+                color: #333333;
+                margin: 32px auto 28px;
+            }
+            .grey {
+                font-size: 24px;
+                color: #999999;
+            }
+            .btn-box {
+                justify-content: space-between;
+                align-items: center;
+                .btn {
+                    width: 224px;
+                    height: 82px;
+                    box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+                    border-radius: 40px;
+                    font-weight: bold;
+                    color: #ffffff;
+                    line-height: 82px;
+                    margin: 48px;
+                }
+                .submit {
+                    background: linear-gradient(
+                        166deg,
+                        #fdc195 0%,
+                        #fd665a 100%
+                    );
+                }
+                .cancel {
+                    background: linear-gradient(
+                        180deg,
+                        #e9e5e5 0%,
+                        #cccccc 100%
+                    );
+                }
+            }
+        }
+    }
+}

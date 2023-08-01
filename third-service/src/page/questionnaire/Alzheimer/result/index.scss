@@ -1,0 +1,110 @@
+.page-alzheimer-result {
+    width: 100%;
+    min-height: 100%;
+    background: #f6f6f6;
+    .result-bg {
+        position: relative;
+        width: 100%;
+        height: 658px;
+        background: url("../../../../assert/alzheimer-result-bg.png") no-repeat;
+        background-size: 100% 100%;
+        &.result-bg2 {
+            background: url("../../../../assert/alzheimer-result-bg2.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        .congratulation {
+            position: absolute;
+            top: 172px;
+            left: 62px;
+            width: 256px;
+            height: 180px;
+            font-size: 64px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+        .congratulation2 {
+            position: absolute;
+            top: 200px;
+            left: 62px;
+            width: 288px;
+            height: 180px;
+            font-size: 48px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+    }
+    .result {
+        position: absolute;
+        top: 500px;
+        left: 32px;
+        right: 32px;
+        z-index: 2;
+        padding: 32px;
+        background: #ffffff;
+        box-shadow: 0px 0px 18px 0px rgba(204, 204, 204, 0.5);
+        border-radius: 8px;
+        &-title {
+            font-size: 48px;
+            font-weight: 500;
+            color: #393939;
+            margin-bottom: 40px;
+        }
+        .result-desc {
+            display: flex;
+            margin-bottom: 32px;
+            img {
+                width: 48px;
+                height: 48px;
+            }
+            .content {
+                margin-left: 32px;
+                padding-bottom: 32px;
+
+                &.bt {
+                    // border-bottom: 1px solid #cccccc;
+                    // opacity: 0.5;
+                    box-shadow: inset 0px -1px 0px 0px rgba(204, 204, 204, 0.5);
+                }
+                .desc-text {
+                    display: flex;
+                    align-items: center;
+                    height: 48px;
+                    margin-bottom: 16px;
+                    font-size: 32px;
+                    font-weight: 400;
+                    color: #393939;
+                }
+                .desc-content {
+                    font-size: 28px;
+                    font-weight: 400;
+                    color: #6c6c6c;
+                }
+                .score {
+                    font-size: 48px;
+                    margin-bottom: 32px;
+                    font-weight: 500;
+                    color: #393939;
+                }
+            }
+        }
+
+        .btn-back {
+            width: 440px;
+            height: 88px;
+            margin: 0 auto;
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #40d899 0%, #41db9c 100%);
+            border-radius: 48px;
+            font-size: 32px;
+            font-weight: 500;
+            color: #ffffff;
+            &.mt {
+                margin-top: 296px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+}

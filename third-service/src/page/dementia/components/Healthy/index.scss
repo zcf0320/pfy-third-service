@@ -1,0 +1,56 @@
+@import '@style/theme.scss';
+.healthypicker {
+    margin-bottom: 224px;
+  margin-top: 48px;
+  padding: 0 32px;
+    .title {
+        font-size: 40px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: bold;
+        color: #393939;
+        line-height: 40px;
+        text-align: center;
+      }
+      .subtitle{
+        font-size: 24px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #393939;
+        line-height: 24px;
+        margin-top: 24px;
+        text-align: center;
+        margin-bottom: 214px;
+      }
+      &-input{
+        border-bottom: 1px solid rgba(64,216,153,1);
+        margin-bottom: 56px;
+          &-title{
+            font-size: 32px;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: bold;
+            color: #333333;
+            line-height: 32px;
+            margin-bottom: 32px;
+          }
+      }
+      .tips{
+        width: 100%;
+        margin-top: -32px;
+        &.m-b-32{
+            margin-bottom: 32px;
+        }
+        .tips-icon{
+            width: 32px;
+            height: 32px;
+            background: url('#{$ossHost}/tips.png') no-repeat;
+            background-size: 100% 100%;
+            margin-right: 16px;
+        }
+        .text{
+            flex: 1;
+            font-size: 24px;
+            color: #999;
+            line-height: 32px;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+@import '@style/theme.scss';
+.pace12 {
+    background: #fff;
+    padding: 0 32px;
+    .circle{
+        width: 24px;
+        height: 24px;
+        border: 1px solid #999999;
+        border-radius: 50%;
+        margin-right: 12px;
+    }
+    .yes,.no{
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .mb124 {
+        margin-bottom: 64px;
+    }
+    .active1{
+        width: 24px;
+        height: 24px;
+        background: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/ferfectRecord/radio.png');
+        background-size: 100% 100%;
+        margin-right: 12px;
+    }
+    .choose-box{
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .mb24{
+        margin-bottom: 24px;
+    }
+    .radio-box{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .yes{
+        margin-right: 64px;
+    }
+    .mt24{
+        margin-top: 134px;
+    }
+    .add-content{
+        width: 686px;
+        height: 76px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        border: 1px solid #CCCCCC;
+        padding-left: 32px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+
+        .left{
+            width: 450px;
+            height: 80%;
+            border: 0px;
+            outline:none;
+            font-size: 28px;
+            color: #333;
+        }
+        .right{
+            align-items: center;
+            .del{
+                width: 32px;
+                height: 32px;
+                background: url('#{$ossHost}/del.png') no-repeat;
+                background-size: 100% 100%;
+                margin-right: 16px;
+            }
+            .add{
+                width: 120px;
+                height: 28px;
+                font-size: 28px;
+                line-height: 1;
+                color: #333;
+                text-align: center;
+                border-left: 1px solid rgba(204,204,204,0.5)
+            }
+        }
+    }
+
+}

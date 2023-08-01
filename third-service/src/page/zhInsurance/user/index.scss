@@ -1,0 +1,120 @@
+.page-user{
+    width: 100%;
+    min-height: 100%;
+    background: #FBFBFB;
+    position: relative;
+    padding-top: 280px;
+    padding-bottom: 144px;
+    .top{
+        width: 100%;
+        height: 397px;
+        background: #fff;
+        padding-top: 64px;
+        background: url('../../../assert/zh_user.png');
+        background-size: 100% 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        .user{
+            width: 375px;
+            height: 168px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 0 83px 83px 0;
+            padding: 32px 56px;
+            font-size: 40px;
+            color: #333;
+            font-weight: bold;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .exit{
+            align-items: center;
+            justify-content: space-between;
+            width: 136px;
+            height: 48px;
+            background: rgba(51, 51, 51, 0.5);
+            border-radius: 200px 0px 0px 200px;
+            color: #fff;
+            font-size: 24px;
+            padding: 0 16px 0 28px;
+            position: absolute;
+            right: 0;
+            top: 124px;
+            .exit-icon{
+                width: 26px;
+                height: 32px;
+                background: url('../../../assert/exit.png') no-repeat;
+                background-size: 100% 100%;
+            }
+
+        }
+    }
+    .tips{
+        width: 686px;
+        height: 208px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px 0px rgba(233,76,64,0.15);
+        border-radius: 12px;
+        border: 1px solid #FE9A51;
+        padding: 32px;
+        font-size: 24px;
+        position: relative;
+        z-index: 10;
+        margin: 0  auto 32px;
+        line-height: 32px;
+        color: #999;
+        .tips-text{
+            margin-top: 16px;
+        }
+        .yellow{
+            color: #FE9A51;
+        }
+
+    }
+    .logo{
+        align-items: center;
+        width: 100%;
+        // position: absolute;
+        // left: 0;
+        // bottom: 32px;
+        justify-content: space-around;
+        // margin-top: 64px;
+        // padding-bottom: 32px;
+        position: absolute;
+        bottom: 48px;
+        .logo-1{
+            width: 34px;
+            height: 48px;
+        }
+        .logo-2{
+            width: 48px;
+            height: 48px;
+        }
+        .logo-3{
+            width: 28px;
+            height: 28px;
+            margin: 0 16px;
+        }
+    }
+    .content{
+        width: 686px;
+        // height: 816px;
+        height: auto;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 20px 0px rgba(233, 76, 64, 0.15);
+        border-radius: 12px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+        // position: absolute;
+        // top: 328px;
+        // left: 32px;
+        padding: 32px;
+        margin-bottom: 32px;
+        .title{
+            font-size: 32px;
+            color: #333;
+            font-weight: bold;
+        }
+    }
+}

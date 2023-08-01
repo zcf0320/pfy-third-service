@@ -1,0 +1,47 @@
+@import '@style/theme.scss';
+.component-question-name{
+    width: 100vw;
+    height: auto;
+    padding: 0 32px;
+    padding-left: 130px;
+    position: relative;
+    .logo{
+        position: absolute;
+        left: 32px;
+        top: 7px;
+        width: 124px;
+        height: 130px;
+        z-index: 10;
+    }
+    .content{
+        width: 501px;
+        min-height: 128px;  
+        border-radius: 12px;
+        border: 1px solid #FFD065;
+        position: relative;
+        padding: 32px;
+        font-size: 31px;
+        color: $color-333;
+        font-weight: bold;
+        margin: 0;
+        flex-direction: column;
+        line-height: 48px;
+        .icon-claw{
+            width: 48px;
+            height: 45px;
+            position: absolute;
+            right: -18px;
+            bottom: -18px;
+        }
+    }
+    .num{
+        font-size: 32px;
+        color: $color-999;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        .current{
+            color: #FFD065;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import '@style/theme.scss';
+.page-protpcal-auth {
+    background: $page-bg;
+    min-height: 100%;
+    background: #fff;
+    .page-content {
+        width: 100%;
+        height: 100%;
+        padding: 32px;
+        box-sizing: border-box;
+        font-size: 24px;
+        color: $color-666;
+        line-height: 36px;
+        .p {
+            margin-top: 40px;
+            &:nth-child(1) {
+                margin: 0;
+            }
+        }
+    }
+    .rich {
+        padding: 0 32px;
+        p {
+            margin: 0;
+        }
+    }
+}

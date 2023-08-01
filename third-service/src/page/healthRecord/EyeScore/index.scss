@@ -1,0 +1,63 @@
+.component-height{
+    align-items: center;
+    flex-direction: column;
+    .title{
+        font-size: 40px;
+        color: #333;
+        font-weight: bold;
+        margin: 96px 0 ;
+    }
+    .picker{
+        width: 520px;
+        height: 474px;
+        background: #FFFFFF;
+        box-shadow: 0px 6px 20px 0px rgba(68,96,225,0.2);
+        border-radius: 12px;
+        position: relative;
+        .picker-content{
+            height: 274px;
+            // position: relative;
+            .eye-list{
+                width: 100%;
+                height: 148px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 10;
+                background: #fff;
+                padding-top: 72px;
+                .eye-item{
+                    flex: 1;
+                    text-align: center;
+                    font-size: 28px;
+                    color: #333;
+                    font-weight: bold;
+                }
+            }
+            .white{
+                width: 100%;
+                height: 148px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: 10;
+                background: #fff;
+            }
+            .picker-view{
+                width: 100%;
+                height: 100%;
+                .am-picker-col-indicator::before{
+                    display: none;
+                }
+                .am-picker-col-indicator::after{
+                    display: none;
+                }
+                .picker-list{
+                    height: 100%;
+                    position: relative;
+                }
+            }
+        }
+        
+    }
+}

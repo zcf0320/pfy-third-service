@@ -1,0 +1,66 @@
+.select-sex-page {
+  margin-top: 48px;
+
+  &-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 64px;
+  }
+  &-sex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-boy {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 120px;
+      .boy-img {
+        width: 160px;
+        height: 160px;
+        background: url(../../../../assert/images/boy-no.png) no-repeat center center;
+        background-size: 100% 100%;
+        &.active {
+          width: 160px;
+          height: 160px;
+          background: url(../../../../assert/images/boy.png) no-repeat center center;
+          background-size: 100% 100%;
+        }
+      }
+      .boy-text {
+        font-size: 24px;
+        font-weight: 400;
+        color: #999999;
+        line-height: 44px;
+        margin-top: 14px;
+      }
+    }
+    &-girl {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .girl-img {
+        width: 160px;
+        height: 160px;
+        background: url(../../../../assert/images/girl-no.png) no-repeat center center;
+        background-size: 100% 100%;
+        &.active {
+          width: 160px;
+          height: 160px;
+          background: url(../../../../assert/images/girl.png) no-repeat center center;
+          background-size: 100% 100%;
+        }
+      }
+      .girl-text {
+        font-size: 24px;
+        font-weight: 400;
+
+        color: #999999;
+        line-height: 44px;
+        margin-top: 14px;
+      }
+    }
+  }
+}

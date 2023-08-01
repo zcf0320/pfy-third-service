@@ -1,0 +1,21 @@
+.region {
+    .content {
+        min-height: 500px;
+
+        .title {
+            font-size: 40px;
+            color: #333;
+            font-weight: bold;
+            margin: 40px 0 96px;
+            text-align: center;
+        }
+
+        .picker-height {
+            .picker {
+                padding: 32px;
+                margin-bottom: 20px;
+                height: 300px;
+            }
+        }
+    }
+}

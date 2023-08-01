@@ -1,0 +1,40 @@
+.component-eye-degree{
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    .eyes{
+        width: 100%;
+        padding: 0 32px;
+        .label{
+            font-size: 32px;
+            color: #333;
+            font-weight: bold;
+            line-height: 1;
+            margin: 32px 0;
+        }
+        .eye-list{
+            justify-content: space-between;
+            .item{
+                width: 316px;
+                height: 92px;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid rgba(204,204,204,0.5);
+                padding-right: 32px;
+                .item-label{
+                    font-size: 28px;
+                    color: #333;
+                    font-weight: bold;
+                }
+                .input{
+                    width: 200px;
+                    text-align: right;
+                    font-size: 28px;
+                    color: #333;
+                    border: 0px;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

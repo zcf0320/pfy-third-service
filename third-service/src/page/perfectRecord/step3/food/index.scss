@@ -1,0 +1,72 @@
+.food {
+    .step-title {
+        font-size: 40px;
+        color: #333;
+        font-weight: bold;
+        margin: 40px 0 96px;
+        text-align: center;
+    }
+    .food-details {
+        display: flex;
+        padding: 0 120px 72px;
+        justify-content: space-between;
+        .item {
+            width: 180px;
+            .img {
+                width: 180px;
+                height: 180px;
+                background-size: 100% 100%;
+            }
+            .img-1 {
+                background-image: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/ferfectRecord/food-1.png');
+            }
+            .img-2 {
+                background-image: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/ferfectRecord/food-2.png');
+            }
+            .img-3 {
+                background-image: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/ferfectRecord/food-3.png');
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 32px;
+                    height: 32px;
+                    background-size: 100% 100%;
+                    position: absolute;
+                    background-image: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/ferfectRecord/active.svg');
+                    top: 154px;
+                    left: 74px;
+                }
+            }
+            .img-4 {
+                background-image: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/ferfectRecord/food-4.png');
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 32px;
+                    height: 32px;
+                    background-size: 100% 100%;
+                    position: absolute;
+                    background-image: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/ferfectRecord/active.svg');
+                    top: 154px;
+                    left: 74px;
+                }
+            }
+            .text {
+                text-align: center;
+                font-size: 24px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #333333;
+                margin-top: 24px;
+            }
+        }
+    }
+    .flavor {
+        margin: 0 32px;
+        border-top: 1px solid #cccccc;
+        padding-bottom: 170px;
+    }
+    .food-bottom {
+        margin-top: 365px;
+    }
+}

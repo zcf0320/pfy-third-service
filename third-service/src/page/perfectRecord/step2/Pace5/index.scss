@@ -1,0 +1,22 @@
+@import "@style/theme.scss";
+.pace5 {
+    background: #fff;
+    padding: 0 32px 200px;
+    .tips {
+        margin-bottom: 64px;
+        width: 100%;
+        .tips-icon {
+            width: 32px;
+            height: 32px;
+            background: url("#{$ossHost}/tips.png") no-repeat;
+            background-size: 100% 100%;
+            margin-right: 16px;
+        }
+        .text {
+            flex: 1;
+            font-size: 24px;
+            color: #999;
+            line-height: 32px;
+        }
+    }
+}

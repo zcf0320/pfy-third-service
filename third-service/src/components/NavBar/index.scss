@@ -1,0 +1,24 @@
+@import '@style/theme.scss';
+.component-navbar{
+    width: 100%;
+    height: 88px;
+    background: $white;
+    align-items: center;
+    padding: 0 32px;
+    // position: fixed;
+    // left: 0;
+    // top: 0;
+    justify-content: space-around;
+    .back{
+        position: absolute;
+        left: 32px;
+        top: 28px;
+        width: 32px;
+        height: 32px;
+    }
+    .title{
+        font-size: 32px;
+        color: $color-333;
+        font-weight: bold;
+    }
+}

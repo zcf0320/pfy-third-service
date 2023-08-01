@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+.flex {
+    display: flex;
+    display: -webkit-flex;
+}
+div {
+    box-sizing: border-box;
+}
+img {
+    display: block;
+}
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+}
+.page {
+    width: 100%;
+    height: 100%;
+    padding-top: 88px;
+    &.no-padding{
+        padding: 0;
+    }
+}
+.weapp {
+    padding-top: 0;
+}
+input:disabled {
+    background-color: #fff;
+}
+input {
+    outline: none;
+    border: none;
+}
+input::-webkit-input-placeholder {
+    color: #cccccc;
+}
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #cccccc;
+}
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #cccccc;
+}
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #cccccc;
+}
+
+.am-picker-col-item-selected {
+    color: #FF5D50 !important;
+  }
+  .am-picker-popup-mask{
+    background-image: url('../src/assert/drawer.png') !important;
+    background-size: 100% 100% !important;
+  }

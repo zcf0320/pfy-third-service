@@ -1,0 +1,156 @@
+@import '@style/theme.scss';
+.page-hra-result{
+    width: 100%;
+    min-height: 100%;
+    background: linear-gradient(180deg, #7E94FB 0%, #BFD1FF 100%);
+    align-items: center;
+    flex-direction: column;
+    padding: 64px 32px;
+    .assessment{
+        width: 100%;
+        background: $white;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 48px 0 16px 0;
+        .assessment-title{
+            font-size: 32px;
+            color: #333333;
+            line-height: 32px;
+        }
+        .resetScore{
+            width: 512px;
+            height: 96px;
+            background: #4A6AFD;
+            border-radius: 12px;
+            font-size: 32px;
+            font-weight: bold;
+            color: $white;
+            line-height: 96px;
+            text-align: center;
+            &.disable{
+                background: rgba(204, 204, 204, 0.6);
+            }
+        }
+        .btn-tip{
+            font-size: 24px;
+            color: #999999;
+            line-height: 24px;
+            margin-top: 20px;
+        }
+    }
+    .healthy-title{
+        width: 236px;
+        height: 64px;
+        background: $white;
+        border-radius: 12px;
+        margin: 32px 0;
+        font-size: 32px;
+        font-weight: bold;
+        color: #4A6AFD;
+        line-height: 64px;
+        text-align: center;
+    }
+    .healthy-tip{
+        width: 100%;
+        background: $white;
+        border-radius: 12px;
+        margin-bottom: 32px;
+        padding: 0 32px 32px;
+        .space-b{
+            justify-content: space-between;
+        }
+        &-top{
+            height: 96px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 1px 0px 0px rgba(204,204,204,0.5);
+            .top-title{
+                font-size: 32px;
+                font-weight: bold;
+                color: #333333;
+                line-height: 32px;
+            }
+            .top-score{
+                font-size: 24px;
+                color: #FF775D;
+                line-height: 32px;
+                width: 62px;
+                height: 32px;
+                border: 1px solid #FF775D;
+                text-align: center;
+                margin-left: 24px;
+            }
+            .top-image-t{
+                width: 32px;
+                height: 32px;
+                background: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/laborDay/putAway.svg') no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+        .healthy-tip-open{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 32px;
+            .tip-open-text{
+                font-size: 24px;
+                color: #333333;
+                line-height: 24px;
+
+            }
+            .top-image-b{
+                width: 32px;
+                height: 32px;
+                background: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/laborDay/putDown.svg') no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+        .healthy-tip-center{
+            padding: 32px 0 0;
+        }
+        &:nth-last-of-type(1){
+            margin-bottom: 0;
+        }
+        &-title{
+            font-size: 32px;
+            color: #333333;
+            >span{
+                display: inline-block;
+                vertical-align: top;
+                width: calc(100% - 32px);
+                line-height: 48px;
+            }
+            &::before{
+                content: "";
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                line-height: 48px;
+                background: #FEBD44;
+                border-radius: 50%;
+                margin-right: 16px;
+                vertical-align: middle;
+            }
+        }
+        &-content{
+            font-size: 24px;
+            color: #999999;
+            line-height: 36px;
+            padding-left: 32px;
+            margin-top: 8px;
+        }
+    }
+    .goTop{
+        width: 88px;
+        height: 88px;
+        background: url('#{$ossHost}/goTop.png');
+        background-size: 100%;
+        position: fixed;
+        bottom: 64px;
+        right: 32px;
+        z-index: 9;
+    }
+}

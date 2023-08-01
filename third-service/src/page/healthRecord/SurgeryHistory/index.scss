@@ -1,0 +1,46 @@
+.component-past{
+    flex-direction: column;
+    align-items: center;
+    .past{
+        width: 100%;
+        padding: 0 32px;
+        .past-title{
+            font-size: 32px;
+            color: #333;
+            line-height: 1;
+            margin: 32px 0;
+            font-weight: bold;
+        }
+        .past-list{
+            flex-wrap: wrap;
+            .past-item{
+                width: 186px;
+                height: 60px;
+                border-radius: 8px;
+                border: 1px solid #CCCCCC;
+                font-size: 24px;
+                color: #333;
+                align-items: center;
+                justify-content: space-around;
+                margin-right: 64px;
+                margin-bottom: 32px;
+                .past-item-content{
+                    width: 144px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    text-align: center;
+                }
+                &.active{
+                    
+                    border: 1px solid #FF775D;
+                    color: #FF5A47;
+                }
+                &:nth-child(3n){
+                    margin-right: 0;
+                }
+            }
+        }
+
+    }
+}

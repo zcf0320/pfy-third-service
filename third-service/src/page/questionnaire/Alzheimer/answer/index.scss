@@ -1,0 +1,122 @@
+.page-alzheimer-answer {
+    width: 100%;
+    min-height: 100%;
+    background: #ffffff;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 48px;
+    .alzheimer-title {
+        font-size: 64px;
+        color: #393939;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 48px;
+        margin: 64px 0 20px;
+    }
+    .alzheimer-sub-title {
+        color: #393939;
+        font-size: 24px;
+        letter-spacing: 4px;
+    }
+    .dot-list {
+        align-items: center;
+        margin: 34px 0 52px;
+        .dot {
+            width: 24px;
+            height: 24px;
+            background: #41db9c;
+            border-radius: 4px;
+            margin-left: 38px;
+            transform: rotate(45deg);
+            &:nth-child(1) {
+                opacity: 0.5;
+                margin-left: 0;
+            }
+        }
+    }
+    .alzheimer-content {
+        width: 686px;
+
+        border-radius: 12px;
+        border: 1px solid #41db9c;
+
+        padding: 48px;
+        align-items: center;
+        flex-direction: column;
+        .question-item {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            .question {
+                width: 100%;
+                font-size: 32px;
+                font-weight: bold;
+                color: #333333;
+                line-height: 44px;
+            }
+            .answer-list {
+                margin-top: 48px;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                .answer-item {
+                    width: 100%;
+                    height: 108px;
+                    border-radius: 12px;
+                    border: 1px solid #41db9c;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 32px;
+
+                    .answer-text {
+                        font-size: 28px;
+                        color: #393939;
+                    }
+                    &.active {
+                        background: #41db9c;
+                        .answer-text {
+                            color: #ffffff;
+                        }
+                    }
+                }
+                .input-answer {
+                    width: 100%;
+                    height: 108px;
+                    border-radius: 12px;
+                    border: 1px solid #41db9c;
+                    display: flex;
+                    align-items: center;
+                    .input {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .action-item {
+        width: 100%;
+        margin-top: 96px;
+        .action-pre {
+            margin: 0 auto;
+            font-size: 24px;
+            color: #666666;
+            line-height: 96px;
+            text-align: center;
+        }
+        .action-next {
+            margin: 0 auto;
+            width: 440px;
+            height: 88px;
+            background: linear-gradient(180deg, #40d899 0%, #41db9c 100%);
+            border-radius: 48px;
+            font-size: 32px;
+            font-weight: bold;
+            color: #ffffff;
+            line-height: 88px;
+            text-align: center;
+            &.disable {
+                background: rgba(204, 204, 204, 0.62);
+            }
+        }
+    }
+}

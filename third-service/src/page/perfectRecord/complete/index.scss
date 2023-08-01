@@ -1,0 +1,59 @@
+.complete {
+    min-height: calc(100vh - 88px);
+    background-color: #ffffff;
+    padding-top: 96px;
+
+    .complete-tips {
+        width: 300px;
+        height: 74px;
+        background-image: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/ferfectRecord/complete-tips.png');
+        background-size: 100% 100%;
+        text-align: center;
+        line-height: 74px;
+        color: #ffffff;
+        font-size: 34px;
+        margin: 0 auto;
+    }
+
+    .complete-img {
+        width: 450px;
+        height: 344px;
+        background-image: url('https://questionnaire-1301127519.cos.ap-shanghai.myqcloud.com/ferfectRecord/complete.png');
+        background-size: 100% 100%;
+        margin: 48px auto 32px;
+    }
+
+    .tips-text {
+        font-size: 32px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .tips-text-other {
+        font-size: 24px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #999999;
+        line-height: 34px;
+        text-align: center;
+        width: 512px;
+        margin: 24px auto 0;
+    }
+
+    .assess {
+        width: 440px;
+        height: 88px;
+        background: linear-gradient(166deg, #FDC195 0%, #FF4638 100%);
+        border-radius: 44px;
+        text-align: center;
+        line-height: 88px;
+        font-size: 32px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin: 186px auto 32px;
+    }
+}

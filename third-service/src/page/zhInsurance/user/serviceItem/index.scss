@@ -1,0 +1,191 @@
+@import "@style/theme.scss";
+.user-service-list {
+    .service-item {
+        width: 622px;
+        height: 148px;
+        box-shadow: 0px 3px 20px 0px rgba(233, 76, 64, 0.15);
+        border: 1px solid #e94c40;
+        border-radius: 12px;
+        background-size: 100% 100%;
+        padding: 32px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 32px;
+        &.active {
+            background: url("../../../../assert/service_active.png");
+            background-size: 100% 100%;
+            border: none;
+            .left {
+                .left-top {
+                    .title {
+                        color: #fff;
+                    }
+                }
+                .left-bottom {
+                    color: #ffffff;
+                }
+            }
+            .right {
+                background: #fff;
+                border: none;
+            }
+        }
+        &.checking {
+            border: 1px solid #e94c40;
+            border-radius: 12px;
+            background: none;
+            .left {
+                .left-top {
+                    align-items: center;
+                    .title {
+                        font-size: 28px;
+                        color: #333333;
+                        font-weight: bold;
+                        max-width: 262px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+                .left-bottom {
+                    font-size: 24px;
+                    color: #999;
+                    margin-top: 32px;
+                }
+            }
+            .right {
+                width: 128px;
+                height: 48px;
+                background: rgba(233, 76, 64, 0.15);
+                border-radius: 24px;
+                border: 1px solid #e94c40;
+                color: #fff;
+                font-size: 24px;
+                align-items: center;
+                justify-content: space-around;
+                color: #e94c40;
+            }
+        }
+        &.disable {
+            background: url("../../../../assert/service_disable.png");
+            background-size: 100% 100%;
+            border: none;
+            .left {
+                .left-top {
+                    .title {
+                        color: #fff;
+                    }
+                    .tag {
+                        color: #cccccc;
+                        border: none;
+                    }
+                }
+                .left-bottom {
+                    color: #ffffff;
+                }
+            }
+            .right {
+                background: #fff;
+                border: none;
+                color: #ccc;
+            }
+        }
+        .left {
+            .left-top {
+                align-items: center;
+                .title {
+                    font-size: 28px;
+                    color: #333333;
+                    font-weight: bold;
+                    max-width: 262px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .tag {
+                    width: 82px;
+                    height: 32px;
+                    margin-left: 32px;
+                    &.tag-0 {
+                        background-image: url("#{$ossHost}/status_1.png");
+                        background-size: 82px 32px;
+                    }
+                    &.tag-1 {
+                        background-image: url("#{$ossHost}/status_2.png");
+                        background-size: 82px 32px;
+                    }
+                    &.tag-2 {
+                        background-image: url("#{$ossHost}/status_3.png");
+                        background-size: 82px 32px;
+                    }
+                    &.need-check-3 {
+                        background-image: url("#{$ossHost}/need_check_3.png");
+                        background-size: 112px 32px;
+                        width: 112px;
+                    }
+                    &.need-check-4 {
+                        background-image: url("#{$ossHost}/need_check_4.png");
+                        background-size: 112px 32px;
+                        width: 112px;
+                    }
+                    &.need-check-5 {
+                        background-image: url("#{$ossHost}/need_check_5.png");
+                        background-size: 112px 32px;
+                        width: 112px;
+                    }
+                }
+            }
+            .left-bottom {
+                font-size: 24px;
+                color: #999;
+                margin-top: 32px;
+            }
+        }
+        .right {
+            width: 128px;
+            height: 48px;
+            background: rgba(233, 76, 64, 0.15);
+            border-radius: 24px;
+            border: 1px solid #e94c40;
+            color: #fff;
+            font-size: 24px;
+            align-items: center;
+            justify-content: space-around;
+            color: #e94c40;
+        }
+    }
+    .service-reason {
+        width: 622px;
+        height: auto;
+        background: rgba(255, 119, 93, 0.1);
+        border-radius: 12px;
+        padding: 0 32px;
+        margin-top: 16px;
+        .reason-top {
+            height: 56px;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 24px;
+            color: #999999;
+            .top-right {
+                font-size: 24px;
+                color: #febd44;
+                .top-icon {
+                    width: 24px;
+                    height: 24px;
+                    margin-left: 12px;
+                    transition-duration: 0.5s;
+                    &.hide {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+        .reason {
+            font-size: 24px;
+            color: #999999;
+            line-height: 40px;
+            padding-bottom: 16px;
+        }
+    }
+}

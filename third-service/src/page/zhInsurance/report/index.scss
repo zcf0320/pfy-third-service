@@ -1,0 +1,99 @@
+@import '../../../index.scss';
+@import '@style/theme.scss';
+.page{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.page-report{
+    width: 100%;
+    height: 100%;
+    background: #FFF4F4;
+    align-items: center;
+    justify-content: space-around;
+    .report-content{
+        align-items: center;
+        justify-content: space-around;
+        color: #FF775D;
+        font-size: 28px;
+        flex-direction: column;
+        .mouth-docter{
+            width: 348px;
+            height: 360px;
+            position: absolute;
+            right: -12px;
+            top: -192px;
+            z-index: 2;
+        }
+        .mouth-title-border{
+            width: 378px;
+            height: 82px;
+            background: #FF775D;
+            position: absolute;
+            top: -176px;
+            left: -8px;
+            .mouth-title-text{
+                display: block;
+                box-sizing: border-box;
+                position: absolute;
+                top: -4px;
+                left: -4px;
+                width: 378px;
+                height: 82px;
+                background: #FFFFFF;
+                border: 2px solid #FF775D;
+                font-size: 40px;
+                font-weight: bolder;
+                color: #FF775D;
+                line-height: 82px;
+                text-align: center;
+            }
+        }
+        .report{
+            width: 448px;
+            height: 448px;
+            background: #ccc;
+            border-radius: 12px;
+            position: relative;
+            z-index: 10;
+        }
+        .content-top{
+            width: 520px;
+            height: 520px;
+            background: #FFD4CB;
+            box-shadow: 0px 6px 20px 0px rgba(68,96,225,0.2);
+            border-radius: 56px;
+            margin-bottom: 32px;
+            position: relative;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}
+.page-empty{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 120px;
+    .empty-icon{
+        width: 450px;
+        height: 386px;
+        // background: url('https://user-center-images-1301127519.cos.ap-shanghai.myqcloud.com/no-report.png') no-repeat center center;
+        background: url('#{$ossHost}/no-report.png') no-repeat;
+        background-size: 450px 386px;
+    }
+    .empty-title{
+        font-size: 32px;
+        color: #333;
+        margin: 64px 0 24px;
+    }
+    .empty-text{
+        text-align: center;
+        width: 590px;
+        line-height: 36px;
+        font-size: 24px;
+        color: #999;
+    }
+}

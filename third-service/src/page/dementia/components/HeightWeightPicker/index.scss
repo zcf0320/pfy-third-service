@@ -1,0 +1,40 @@
+.height-weight-picker {
+  margin-top: 48px;
+  padding: 0 32px;
+  margin-bottom: 224px;
+  .title {
+    font-size: 40px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: bold;
+    color: #393939;
+    line-height: 40px;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 24px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #393939;
+    line-height: 24px;
+    margin-top: 24px;
+    text-align: center;
+    margin-bottom: 214px;
+  }
+  .height-picker,
+  .weight-picker {
+    flex: 1;
+    .picker-title {
+      color: #393939;
+      text-align: center;
+      font-weight: 400;
+      font-size: 32px;
+      margin-bottom: 64px;
+    }
+    .am-picker-col-indicator::before {
+      height: 2px;
+    }
+    .am-picker-col-indicator::after {
+      height: 2px;
+    }
+  }
+}

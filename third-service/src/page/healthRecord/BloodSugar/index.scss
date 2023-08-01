@@ -1,0 +1,63 @@
+@import '@style/theme.scss';
+.component-menstruation-detail{
+    width: 100%;
+    padding: 96px 32px 0;
+    align-items: center;
+    flex-direction: column;
+    .component-title{
+        font-weight: bold;
+        font-size: 40px;
+        color: #333;
+        line-height: 40px;
+        margin-bottom: 96px;
+    }
+    .label{
+        font-weight: bold;
+        font-size: 32px;
+        color: #333;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 32px;
+        &.m-t{
+            margin: 64px 0 56px;
+        }
+    }
+    .input{
+        width: 100%;
+        height: 92px;
+        border:0px;
+        border-bottom: 1px solid rgba(204,204,204,0.5);
+        font-size: 28px;
+        color: #333;
+        outline:none;
+        margin-bottom: 32px;
+    }
+    .sub-title{
+        width: 100%;
+        font-size: 28px;
+        color: #333;
+        line-height: 28px;
+        margin-bottom: 32px;
+        text-align: left;
+        font-weight: bold;
+    }
+    .tips{
+        width: 100%;
+        &.m-b-32{
+            margin-bottom: 32px;
+        }
+        .tips-icon{
+            width: 32px;
+            height: 32px;
+            background: url('#{$ossHost}/tips.png') no-repeat;
+            background-size: 100% 100%;
+            margin-right: 16px;
+        }
+        .text{
+            flex: 1;
+            font-size: 24px;
+            color: #999;
+            line-height: 32px;
+        }
+    }
+}

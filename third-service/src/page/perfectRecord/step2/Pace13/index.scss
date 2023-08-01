@@ -1,0 +1,38 @@
+.pace13 {
+    background: #fff;
+    padding: 0 32px;
+    .function {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 44px;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 48px;
+    }
+    .radio {
+        justify-content: flex-start;
+        align-items: center;
+        .type {
+            background: #fff;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+        .normal {
+            margin-right: 64px;
+        }
+        .active {
+            background: rgba(253, 102, 90, 1);
+            border: none;
+            color: #ff5a47;
+        }
+        .circle {
+            text-align: center;
+            border: 1px solid rgba(204, 204, 204, 0.5);
+            width: 120px;
+            height: 120px;
+            line-height: 114px;
+            border-radius: 50%;
+        }
+    }
+}

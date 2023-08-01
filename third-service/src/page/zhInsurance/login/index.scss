@@ -1,0 +1,204 @@
+.page-login{
+    width: 100%;
+    min-height: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    .tips{
+        width: 100%;
+        height: 74px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 28px;
+        color: #FF790F;
+        background: rgba(254, 164, 87, 0.2);;
+    }
+    .logo{
+        align-items: center;
+        margin: 53px 0 92px;
+        .logo-1{
+            width: 51px;
+            height: 72px;
+        }
+        .logo-2{
+            width: 71px;
+            height: 71px;
+        }
+        .logo-3{
+            width: 42px;
+            height: 42px;
+            margin: 0 24px;
+        }
+    }
+    .title{
+        font-size: 48px;
+        color: #333;
+        font-weight: bold;
+    }
+    .input{
+        width: 592px;
+        height: 92px;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+        margin: 64px 0 88px; 
+        font-size: 40px;
+        input::placeholder {
+            color: #ccc;
+        }
+        &.noborder .am-list-line {
+            &::after {
+                height: 0 !important;
+            }
+        }
+    }
+    .am-list-item .am-input-control input{
+        font-size: 40px;
+        color: #333;
+    }
+    .save{
+        width: 622px;
+        height: 88px;
+        background: linear-gradient(166deg, #FDC195 0%, #FD665A 100%);
+        border-radius: 44px;
+        color: #fff;
+        font-size: 32px;
+        align-items: center;
+        justify-content: space-around;
+        &.disable{
+            background: rgba(204, 204, 204, 0.6);
+        }
+    }
+    .img-list{
+        width: 100%;
+        padding-top: 92px;
+        .img{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+    .show{
+        width: 622px;
+        height: 488px;
+        background: url('../../../assert/line.png');
+        background-size: 100% 100%;
+        margin-top: 104px;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+        .show-title{
+            position: absolute;
+            top: -16px;
+            left: 216px;
+            font-size: 32px;
+            color: #E94C40;
+            font-weight: bold;
+        }
+        .common{
+            width: 512px;
+            height: 128px;          
+            border-radius: 12px;
+            border: 1px solid #E94C40;
+            position: relative;
+            font-size: 32px;
+            color: #333;
+            padding: 48px 0 48px 212px;
+            margin-top: 67px;
+            &.m-t-101{
+                margin-top: 101px;
+            }
+            .common-1{
+                width: 200px;
+                height: 181px;
+                position: absolute;
+                left: -31px;
+                bottom:-2px;
+            }
+            .common-2{
+                width: 200px;
+                height: 163px;
+                position: absolute;
+                left: -31px;
+                bottom:-2px;
+            }
+        }
+    }
+    .modal {
+        width: 100%;
+        height: 100vh;
+        background: rgba(51, 51, 51, 0.7);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        align-items: center;
+        justify-content: space-around;
+        .modal-content {
+            width: 578px;
+            height: 380px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            position: relative;
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translateX(-50%) translateY(-50%);
+            // z-index: 999;
+            .close{
+                width: 32px;
+                height: 32px;
+                background-image: url('../../../assert/close_normal.png');
+                background-size: 32px 32px;
+                position: absolute;
+                right: 24px;
+                top: 24px;
+            }
+            .modal-title {
+                font-size: 32px;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: bold;
+                color: #333333;
+                line-height: 32px;
+                margin-top: 48px;
+                text-align: center;
+            }
+            .input-name {
+                width: 466px;
+                height: 88px;
+                border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+                margin: 32px auto;
+                font-size: 28px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #333;
+                background-color: #fff;
+                .am-list-line {
+                    &::after {
+                        height: 0;
+                    }
+                }
+                input::placeholder {
+                    font-size: 28px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: #CCCCCC;
+                    border: none;
+                }
+            }
+            .save {
+                width: 454px;
+                height: 88px;
+                background: linear-gradient(166deg, #FDC195 0%, #FD665A 100%);
+                border-radius: 44px;
+                margin: 0 auto;
+                text-align: center;
+                line-height: 88px;
+                font-size: 32px;
+                font-weight: bold;
+                color: #FFFFFF;
+                .disable{
+                    background: rgba(204, 204, 204, 0.6);
+                }
+                
+            }
+        }
+    }
+}

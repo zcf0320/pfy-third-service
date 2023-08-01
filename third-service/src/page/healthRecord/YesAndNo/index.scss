@@ -1,0 +1,33 @@
+.component-yes-no{
+    width: 686px;
+    height: 476px;
+    border-bottom: 1px solid rgba(204,204,204,1);
+    align-items: center;
+    flex-direction: column;
+    .component-title{
+        font-size: 40px;
+        color: #333;
+        margin: 96px 0;
+        font-weight: bold;
+    }
+    .select-list{
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 86px;
+        .select-item{
+            width: 180px;
+            height: 180px;
+            border: 2px solid #CCCCCC;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 100px;
+            color: #999;
+            border-radius: 50%;
+            &.active{
+                color: #FF5A47;
+                border: 2px solid #FF5A47;
+                border-radius: 50%;
+            }
+        }
+    }
+}

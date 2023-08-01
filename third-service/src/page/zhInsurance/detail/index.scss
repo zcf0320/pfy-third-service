@@ -1,0 +1,66 @@
+.page-detail{
+    width: 100%;
+    height: 100%;
+    background: #FBFBFB;
+    padding-top: 16px;
+    .bg-content{
+        width: 730px;
+        height: 1058px;
+        margin: 0 auto;
+        background: url('../../../assert/bg_detail.png');
+        background-size: 100% 100%;
+        padding-top: 16px;
+        .content{
+            width: 686px;
+            height: 1014px;
+            margin: 0 auto;
+            padding: 32px 16px;
+            .title{
+                font-size: 32px;
+                color: #333;
+                text-align: center;
+                font-weight: bold;
+            }
+            .common-title{
+                font-size: 28px;
+                color: #333;
+                font-weight: bold;
+                margin: 32px 30px;
+            }
+            .common{
+                color: #666;
+                font-size: 24px;
+                line-height: 24px;
+                margin: 0 30px;
+                &.m-b-16{
+                    margin-bottom: 16px;
+                }
+                .label{
+                    width: 110px;
+                    font-size: 24px;
+                    margin-right: 56px;
+                    color: #333;
+                    line-height: 24px;
+                }
+                .address{
+                    width: 450px;
+                }
+            }
+            .bottom{
+                width: 100%;
+                border-top: 1px dashed #CCCCCC;
+                margin-top: 64px;
+                align-items: center;
+                flex-direction: column;
+                padding-top: 64px;
+                font-size: 28px;
+                color: #333;
+                .img{
+                    width: 270px;
+                    height: 270px;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}

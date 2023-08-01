@@ -1,0 +1,128 @@
+@import '@style/theme.scss';
+.page-hpv-start{
+    width: 100%;
+    min-height: 100%;
+    background: linear-gradient(180deg, #FF8BA7 0%, #FFBBBB 100%);
+    align-items: center;
+    flex-direction: column;
+    .hpv-title{
+        font-size: 64px;
+        color: $white;
+        line-height: 1;
+        font-weight: bold;
+        margin: 64px 0 20px;
+    }
+    .hpv-sub-title{
+        color: $white;
+        line-height: 24px;
+        font-size: 24px;
+    }
+    .dot-list{
+        align-items: center;
+        margin: 50px 0 60px;
+        .dot{
+            width: 24px;
+            height: 24px;
+            background: $white;
+            border-radius: 4px;
+            opacity: 0.5;
+            margin-left: 38px;
+            transform: rotate(45deg);
+            &:nth-child(1){
+                margin-left: 0;
+                
+            }
+        }
+    }
+    .hpv-content{
+        width: 686px;
+        height: 1196px;
+        background: $white;
+        border-radius: 12px;
+        padding: 36px 32px;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 64px;
+        .bg{
+            width: 528px;
+            height: 376px;
+            background: url('#{$ossHost}/hpv_start.png');
+            background-size: 100% 100%;
+        }
+        .hpv-introduce{
+            font-size: 32px;
+            color: $color-666;
+            line-height: 44px;
+            margin: 32px 0;
+            .number{
+                color: #FD7698;
+            }
+        }
+        .hpv-question{
+            width: 480px;
+            font-weight: bold;
+            text-align: center;
+            color: #FD7698;
+            line-height: 56px;
+            font-size: 40px;
+        }
+        .input-item{
+            width: 622px;
+            height: 80px;
+            border-bottom: 1px solid rgba(204,204,204,0.5);
+            margin-top: 32px;
+            padding: 0 24px;
+            align-items: center;
+            justify-content: space-between;
+            overflow: visible;
+            .input-content{
+                height: 80%;
+                font-size: 32px;
+                color: $color-333;
+            }
+            .code{
+                height: 99%;
+                font-size: 24px;
+                color: #FEBD44;
+                align-items: center;
+                &.disable{
+                    color: $color-999;
+                }
+            }
+        }
+        .login-btn{
+            width: 622px;
+            height: 96px;
+            border-radius: 12px;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 32px;
+            color: $white;
+            margin-top: 48px;
+            background: #FD7698;
+            &.disable{
+                background: rgba(204, 204, 204, 0.6);
+            }
+        }
+    }
+}
+.none{
+    width: 100%;
+    height: 100%;
+    background: $white;
+    align-items: center;
+    justify-content: space-around;
+    .none-content{
+        align-items: center;
+        flex-direction: column;
+        font-size: 28px;
+        color: $color-666;
+    }
+    .none-bg{
+        width: 524px;
+        height: 414px;
+        background: url('#{$ossHost}/hpv_no_bg.png') no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 48px;
+    }
+}

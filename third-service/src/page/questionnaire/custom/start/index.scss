@@ -1,0 +1,65 @@
+@import '../../../../index.scss';
+@import '@style/theme.scss';
+.page-custom-start{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    background-size: 100% 100%;
+    .start-title{
+        font-size: 64px;
+        line-height: 1;
+        color: $white;
+        font-weight: bold;
+        margin-top: 64px;
+        text-align: center;
+    }
+    .sub-title{
+        width: 686px;
+        padding: 32px;
+        font-size: 36px;
+        color: $color-333;
+        line-height: 56px;
+        letter-spacing: 4px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        position: fixed;
+        left: 32px;
+        bottom: 242px;
+    }
+    .start{
+        width: 336px;
+        height: 88px;
+        background: #FFFFFF;
+        border-radius: 12px;
+        font-weight: 500;
+        align-items: center;
+        font-size: 40px;
+        justify-content: space-around;
+        position: fixed;
+        left: 208px;
+        bottom: 70px;
+
+    }
+}
+.none{
+    width: 100%;
+    height: 100%;
+    background: $white;
+    align-items: center;
+    justify-content: space-around;
+    .none-content{
+        align-items: center;
+        flex-direction: column;
+        font-size: 28px;
+        color: $color-666;
+    }
+    .none-bg{
+        width: 524px;
+        height: 414px;
+        background: url('#{$ossHost}/hpv_no_bg.png') no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 48px;
+    }
+}

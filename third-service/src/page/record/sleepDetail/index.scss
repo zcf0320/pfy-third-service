@@ -1,0 +1,151 @@
+.sleepDetail{
+  padding:0 32px 32px 32px;
+  .public-sleep-data{
+    padding: 32px;
+    background: url("../../../assert/health-sleep-active.png") center no-repeat;
+    background-size: 100% 100%;
+    margin:42px 0 24px 0;
+  }
+  .record-sleep-content{
+    div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 24px;
+        color: rgba(255,255,255,0.7);
+        .sleep-status{
+            color: #fff;
+            font-size: 40px;
+        }
+        span{
+            color: #fff;
+            font-size: 32px;
+            padding: 0 6px;
+        }
+    }
+    
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+    font-size: 28px;
+    .supplementary-content{
+        width: 100%;
+        height: auto;
+        font-size: 28px;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 42px;
+        word-wrap:break-word; 
+        word-break:break-all;
+    }
+}
+    .public-sleep-nodata{
+        height: 556px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    margin:42px 0 24px 0;
+    padding: 0 32px;
+    .public-sleep-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span{
+            color: #333333;
+        }
+        span:nth-child(1){
+            font-size: 32px;
+            font-weight: 600;
+        }
+        span:nth-child(2){
+            font-size: 28px;
+            font-weight: 600;
+            margin: 32px 0;
+        }
+    }
+    .nodata-img{
+        height: 334px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background: red;
+        img{
+            height: 100%;
+        }
+    }
+    .no-record{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        font-weight: 400;
+        color: #999999;
+        line-height: 28px;
+        margin: 32px 0;
+    }
+    }
+    .record-chart {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 32px;
+        .record-chart-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .service-more {
+            width: 17px;
+            height: 17px;
+        }
+        .record-chart-title {
+            font-size: 32px;
+            font-weight: 600;
+            color: #333333;
+        }
+        .record-chart-text {
+            font-size: 28px;
+            font-weight: 400;
+            color: #999999;
+            display: flex;
+            align-items: center;
+        }
+        .record-chart-foot {
+            // margin-top: 32px;
+            background: #f7f7f7;
+            border-radius: 16px;
+            font-size: 24px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 32px;
+            padding: 32px;
+            // margin-top: 32px;
+        }
+        // .pie-chart{
+        //     width: 100%;
+        //     // height: 296px;
+        //     margin-bottom: 32px;
+        //     // background: red;
+        // }
+        .pie-chart-content {
+            height: auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: 32px 0;
+            // position: relative;
+           
+        }
+        .record-chart-foot {
+            // margin-top: 32px;
+            background: #f7f7f7;
+            border-radius: 16px;
+            font-size: 24px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 32px;
+            padding: 32px;
+            // margin-top: 32px;
+        }
+    }
+
+}

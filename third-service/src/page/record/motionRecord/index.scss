@@ -1,0 +1,279 @@
+.motionRecord{
+    padding: 0 32px 32px 32px;
+    .public-sleep-nodata{
+        height: 556px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    margin:42px 0 24px 0;
+    padding: 0 32px;
+    .public-sleep-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span{
+            color: #333333;
+        }
+        span:nth-child(1){
+            font-size: 32px;
+            font-weight: 600;
+        }
+        span:nth-child(2){
+            font-size: 28px;
+            font-weight: 600;
+            margin: 32px 0;
+        }
+    }
+    .nodata-img{
+        height: 334px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background: red;
+        img{
+            height: 100%;
+        }
+    }
+    .no-record{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        font-weight: 400;
+        color: #999999;
+        line-height: 28px;
+        margin: 32px 0;
+    }
+    }
+    .public-data-motion {
+        margin-top: 42px;
+        padding: 32px;
+        background: url("../../../assert/health-motion-nodata.png") center no-repeat;
+        background-size: 100% 100%;
+
+        &.active {
+            padding: 32px;
+            background: url("../../../assert/health-motion.png") center no-repeat;
+            background-size: 100% 100%;
+        }
+        .flex-between {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .record-title {
+            font-size: 32px;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 32px;
+        }
+        .record-time {
+            font-size: 28px;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 28px;
+        }
+        .record-top-content {
+            // width: 70%;
+            flex-direction: column;
+            margin-top: 32px;
+            // margin-bottom: 96px;
+            .blood-pressure {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 64px;
+            }
+            .record-content-title {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: -10px;
+            }
+            .record-top-content-title {
+                font-size: 52px;
+                font-weight: 500;
+                color: #ffffff;
+                // line-height: 52px;
+            }
+            .record-top-content-text {
+                font-size: 24px;
+                font-weight: 400;
+                color: #ffffff;
+                // line-height: 24px;
+                margin: 16px 0 0px 0;
+            }
+            .record-show {
+                width: 622px;
+                height: 16px;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, #ffffff 100%);
+                position: relative;
+                margin-top: 16px;
+                span {
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: #ffffff;
+                    line-height: 24px;
+                    position: absolute;
+                }
+                span:nth-child(1) {
+                    top: 22px;
+                    left: 50px;
+                }
+                span:nth-child(2) {
+                    top: 22px;
+                    left: 282px;
+                }
+                span:nth-child(3) {
+                    top: 22px;
+                    right: 50px;
+                }
+                .record-triangle {
+                    width: 0px;
+                    height: 0px;
+                    border: 12px solid transparent;
+                    border-top-color: #fff;
+                    position: absolute;
+                    top: -12px;
+                    left: 65px;
+                }
+                .record-triangle-normal {
+                    width: 0px;
+                    height: 0px;
+                    border: 12px solid transparent;
+                    border-top-color: #fff;
+                    position: absolute;
+                    top: -12px;
+                    left: 304px;
+                }
+                .record-triangle-abnormal {
+                    width: 0px;
+                    height: 0px;
+                    border: 12px solid transparent;
+                    border-top-color: #fff;
+                    position: absolute;
+                    top: -12px;
+                    left: 440px;
+                }
+            }
+        }
+        .record-foot-content {
+            // background: red;
+            margin-top: 0px;
+            // background: red;
+
+            .record-foot-content-title {
+                font-size: 28px;
+                font-weight: 400;
+                color: #333333;
+                line-height: 32px;
+                margin-bottom: 16px;
+            }
+            .record-foot-content-text {
+                font-size: 24px;
+                font-weight: 400;
+                color: #666666;
+                line-height: 32px;
+            }
+        }
+        
+    }
+    .record-main-basicData {
+        background: #ffffff;
+        border-radius: 16px;
+        // height: 294px;
+        // overflow-y: auto;
+        margin: 16px 0 20px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding:0 32px;
+        .range {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            // flex-direction: column;
+            justify-content: space-between;
+            font-size: 32px;
+            color: #333333;
+            margin-bottom: 58px;
+            span{
+                width: calc(100%/3);
+             }
+             span:nth-child(1){
+              font-weight: 600;
+             }
+             span:nth-child(2){
+              text-align: center;
+             }
+             span:nth-child(3){
+              text-align: right;
+             }
+        }
+        .range:nth-child(1){
+            margin-top: 32px;
+        }
+        .range:last-child{
+            margin-bottom: 32px;
+        }
+    }
+    // .record-main-basicData::-webkit-scrollbar{
+    //     display:none;
+    // }
+    .record-chart {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 32px;
+        .record-chart-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .service-more {
+            width: 17px;
+            height: 17px;
+        }
+        .record-chart-title {
+            font-size: 32px;
+            font-weight: 600;
+            color: #333333;
+        }
+        .record-chart-text {
+            font-size: 28px;
+            font-weight: 400;
+            color: #999999;
+            display: flex;
+            align-items: center;
+        }
+        .record-chart-foot {
+            // margin-top: 32px;
+            background: #f7f7f7;
+            border-radius: 16px;
+            font-size: 24px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 32px;
+            padding: 32px;
+            // margin-top: 32px;
+        }
+        // .pie-chart{
+        //     width: 100%;
+        //     // height: 296px;
+        //     margin-bottom: 32px;
+        //     // background: red;
+        // }
+        .pie-chart-content {
+            // height: 316px;
+            height: auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 32px 0;
+            // position: relative;
+            // background: red;
+        }
+    }
+}

@@ -1,0 +1,1045 @@
+.record {
+    background: #f2f6fa;
+    padding-bottom: 168px;
+    // height: 100vh;
+    // padding: 32px 32px 0 32px;
+    .record-data {
+        padding: 32px 32px 0px 32px;
+    }
+    .record-noData {
+        padding: 32px;
+        background: url("../../../assert/health-detail-basic-data.png") center no-repeat;
+        background-size: 100% 100%;
+        &.active {
+            padding: 32px;
+            background: url("../../../assert/health-detail-basic-data-active.png") center no-repeat;
+            background-size: 100% 100%;
+        }
+        .flex-between {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .record-title {
+            font-size: 32px;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 32px;
+        }
+        .record-time {
+            font-size: 28px;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 28px;
+        }
+        .record-top-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 32px;
+            margin-bottom: 96px;
+            .record-top-content-title {
+                font-size: 52px;
+                font-weight: 500;
+                color: #ffffff;
+                line-height: 52px;
+            }
+            .record-top-content-text {
+                font-size: 24px;
+                font-weight: 400;
+                color: #ffffff;
+                line-height: 24px;
+                margin: 16px 0 18px 0;
+            }
+            .record-show {
+                width: 622px;
+                height: 16px;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, #ffffff 100%);
+                position: relative;
+                margin-top: 16px;
+                span {
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: #ffffff;
+                    line-height: 24px;
+                    position: absolute;
+                }
+                span:nth-child(1) {
+                    top: 24px;
+                    left: 50px;
+                }
+                span:nth-child(2) {
+                    top: 24px;
+                    left: 282px;
+                }
+                span:nth-child(3) {
+                    top: 24px;
+                    right: 50px;
+                }
+                .record-triangle {
+                    width: 0px;
+                    height: 0px;
+                    border: 12px solid transparent;
+                    border-top-color: #fff;
+                    position: absolute;
+                    top: -12px;
+
+                    left: 65px;
+                }
+                .record-triangle-normal {
+                    width: 0px;
+                    height: 0px;
+                    border: 12px solid transparent;
+                    border-top-color: #fff;
+                    position: absolute;
+                    top: -12px;
+                    left: 304px;
+                }
+                .record-triangle-abnormal {
+                    width: 0px;
+                    height: 0px;
+                    border: 12px solid transparent;
+                    border-top-color: #fff;
+                    position: absolute;
+                    top: -12px;
+                    left: 440px;
+                }
+            }
+        }
+        .record-main-content {
+            height: 160px;
+            background: #f7f7f7;
+            border-radius: 16px;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .record-height,
+            .record-weight,
+            .record-bmi {
+                width: calc(100% / 3);
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .record-weight {
+                border-left: 2px solid #ededed;
+                border-right: 2px solid #ededed;
+            }
+            .record-main-title {
+                font-size: 40px;
+                font-weight: 600;
+                color: #000000;
+                line-height: 40px;
+                margin-bottom: 16px;
+            }
+            .record-main-text {
+                font-size: 24px;
+                font-weight: 400;
+                color: #999999;
+                line-height: 24px;
+            }
+        }
+        .record-foot-content {
+            .record-foot-content-title {
+                font-size: 28px;
+                font-weight: 400;
+                color: #333333;
+                line-height: 32px;
+                margin-bottom: 16px;
+            }
+            .record-foot-content-text {
+                font-size: 24px;
+                font-weight: 400;
+                color: #666666;
+                line-height: 32px;
+            }
+        }
+    }
+    .record-main-basicData {
+        background: #ffffff;
+        border-radius: 16px;
+        margin: 16px 0 20px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 32px;
+        .range {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            font-size: 32px;
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 32px;
+        }
+        .record-value {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .standard-value {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            font-size: 24px;
+            font-weight: 400;
+            color: #666666;
+            line-height: 24px;
+            margin-bottom: 16px;
+        }
+        .calculation {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            font-size: 24px;
+            font-weight: 400;
+            color: #666666;
+            line-height: 24px;
+        }
+    }
+
+    .record-main-motionData {
+        background: #ffffff;
+        border-radius: 16px;
+        // height: 294px;
+        // overflow-y: auto;
+        margin: 16px 0 20px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 32px;
+        .range {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            // flex-direction: column;
+            justify-content: space-between;
+            font-size: 32px;
+            color: #333333;
+            margin-bottom: 58px;
+            span {
+                width: calc(100% / 3);
+            }
+            span:nth-child(1) {
+                font-weight: 600;
+            }
+            span:nth-child(2) {
+                text-align: center;
+            }
+            span:nth-child(3) {
+                text-align: right;
+            }
+        }
+        .range:nth-child(1) {
+            margin-top: 32px;
+        }
+        .range:last-child {
+            margin-bottom: 32px;
+        }
+    }
+    // .record-main-motionData::-webkit-scrollbar{
+    //     display:none;
+    // }
+    .record-chart {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 32px;
+        .record-chart-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .service-more {
+            width: 17px;
+            height: 17px;
+        }
+        .record-chart-title {
+            font-size: 32px;
+            font-weight: 600;
+            color: #333333;
+        }
+        .record-chart-text {
+            font-size: 28px;
+            font-weight: 400;
+            color: #999999;
+            display: flex;
+            align-items: center;
+        }
+        .record-chart-foot {
+            // margin-top: 32px;
+            background: #f7f7f7;
+            border-radius: 16px;
+            font-size: 24px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 32px;
+            padding: 32px;
+            // margin-top: 32px;
+        }
+        // .pie-chart{
+        //     width: 100%;
+        //     // height: 296px;
+        //     margin-bottom: 32px;
+        //     // background: red;
+        // }
+        .pie-chart-content {
+            // height: 316px;
+            height: auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 32px 0;
+            // position: relative;
+            // background: red;
+        }
+    }
+    .public-data {
+        padding: 32px;
+        background: url("../../../assert/health-detail-public.png") center no-repeat;
+        background-size: 100% 100%;
+
+        &.active {
+            padding: 32px;
+            background: url("../../../assert/health-detail-public-active.png") center no-repeat;
+            background-size: 100% 100%;
+        }
+        .flex-between {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .record-title {
+            font-size: 32px;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 32px;
+        }
+        .record-time {
+            font-size: 28px;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 28px;
+        }
+        .record-top-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 32px;
+            margin-bottom: 96px;
+
+            .blood-pressure {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .record-content-title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: -10px;
+            }
+            .record-top-content-title {
+                font-size: 52px;
+                font-weight: 500;
+                color: #ffffff;
+                line-height: 52px;
+            }
+            .record-top-content-text {
+                font-size: 24px;
+                font-weight: 400;
+                color: #ffffff;
+                line-height: 24px;
+                margin: 16px 0 18px 0;
+            }
+            .record-show {
+                width: 622px;
+                height: 16px;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, #ffffff 100%);
+                position: relative;
+                margin-top: 16px;
+
+                span {
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: #ffffff;
+                    line-height: 24px;
+                    position: absolute;
+                }
+                span:nth-child(1) {
+                    top: 22px;
+                    left: 50px;
+                }
+                span:nth-child(2) {
+                    top: 22px;
+                    left: 282px;
+                }
+                span:nth-child(3) {
+                    top: 22px;
+                    right: 50px;
+                }
+                .record-triangle {
+                    width: 0px;
+                    height: 0px;
+                    border: 12px solid transparent;
+                    border-top-color: #fff;
+                    position: absolute;
+                    top: -12px;
+                    left: 65px;
+                }
+                .record-triangle-normal {
+                    width: 0px;
+                    height: 0px;
+                    border: 12px solid transparent;
+                    border-top-color: #fff;
+                    position: absolute;
+                    top: -12px;
+                    left: 304px;
+                }
+                .record-triangle-abnormal {
+                    width: 0px;
+                    height: 0px;
+                    border: 12px solid transparent;
+                    border-top-color: #fff;
+                    position: absolute;
+                    top: -12px;
+                    left: 440px;
+                }
+            }
+        }
+        .record-foot-content {
+            // background: red;
+            margin-top: 0px;
+            // background: red;
+
+            .record-foot-content-title {
+                font-size: 28px;
+                font-weight: 400;
+                color: #333333;
+                line-height: 32px;
+                margin-bottom: 16px;
+            }
+            .record-foot-content-text {
+                font-size: 24px;
+                font-weight: 400;
+                color: #666666;
+                line-height: 32px;
+            }
+        }
+    }
+    .container {
+        position: fixed;
+        // position: sticky;
+        bottom: 0px;
+        height: 166px;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.05);
+        padding: 0 32px;
+        overflow: hidden;
+        .container-btn {
+            height: 80px;
+            margin-top: 20px;
+            background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+            box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+            border-radius: 40px;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            color: #ffffff;
+            line-height: 28px;
+        }
+    }
+    .foot-conter {
+        .foot-conter-title {
+            font-size: 28px;
+            font-weight: 500;
+            color: #333333;
+            line-height: 32px;
+            margin-top: 82px;
+            padding: 0 138px;
+        }
+        .foot-contes-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: 500;
+            // color: #FF5D50;
+            line-height: 40px;
+        }
+        .container-btn {
+            height: 80px;
+            margin-top: 20px;
+            background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+            box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+            border-radius: 40px;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            color: #ffffff;
+            line-height: 28px;
+        }
+    }
+    .blood-pressure-drawer {
+        margin: 64px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-title {
+            font-size: 32px;
+            font-weight: 400;
+            color: #333333;
+        }
+        &-input {
+            flex: 1;
+            margin-left: 44px;
+            height: 64px;
+            background: #f4f4f4;
+            border-radius: 40px;
+
+            display: flex;
+            align-items: center;
+            .pressure-input {
+                font-size: 24px;
+                color: #999999;
+                outline: none;
+                border: none;
+
+                background: none;
+                height: 100%;
+                input {
+                    font-size: 24px;
+                    color: #999999;
+                }
+            }
+        }
+        &-btn {
+            height: 80px;
+            margin-top: 64px;
+            background: #dcdddc;
+            border-radius: 40px;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            color: #ffffff;
+
+            outline: none;
+            border: none;
+            &.active {
+                background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+                box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+            }
+        }
+    }
+    .blood-sugar {
+        margin: 98px 0 112px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .blood-sugar-title {
+            font-size: 32px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 32px;
+        }
+        .blood-sugar-text-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // background: red;
+        }
+        .blood-sugar-text-content-text {
+            width: 160px;
+            height: 64px;
+            background: #f4f4f4;
+            border-radius: 32px;
+            font-size: 24px;
+            font-weight: 400;
+            color: #333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.active {
+                color: #fb6d54;
+                border: 1px solid #fb6d54;
+            }
+        }
+
+        .blood-sugar-text-content-text:nth-child(1) {
+            margin-right: 16px;
+        }
+    }
+    .blood-suga {
+        margin-bottom: 148px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .blood-sugar-title {
+            font-size: 32px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 32px;
+        }
+        .blood-sugar-input {
+            width: 336px;
+            height: 64px;
+            background: #f4f4f4;
+            border-radius: 40px;
+            padding: 3px 44px;
+            display: flex;
+            align-items: center;
+            .sugar-input {
+                font-size: 24px;
+                color: #999999;
+                outline: none;
+                border: none;
+                line-height: 24px;
+                background: none;
+                height: 100%;
+            }
+        }
+    }
+    .blood-suga-btn {
+        height: 80px;
+        margin-top: 20px;
+        background: #dcdddc;
+        border-radius: 40px;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 28px;
+        outline: none;
+        border: none;
+        &.active {
+            background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+            box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+        }
+    }
+    .public-data-motion {
+        padding: 32px;
+        background: url("../../../assert/health-motion-nodata.png") center no-repeat;
+        background-size: 100% 100%;
+
+        &.active {
+            padding: 32px;
+            background: url("../../../assert/health-motion.png") center no-repeat;
+            background-size: 100% 100%;
+        }
+        .flex-between {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .record-title {
+            font-size: 32px;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 32px;
+        }
+        .record-time {
+            font-size: 28px;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 28px;
+        }
+        .record-top-content {
+            // width: 70%;
+            flex-direction: column;
+            margin-top: 32px;
+            // margin-bottom: 36px;
+
+            .blood-pressure {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 64px;
+            }
+            .record-content-title {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: -10px;
+                // background: red;
+            }
+            .record-top-content-title {
+                font-size: 52px;
+                font-weight: 500;
+                color: #ffffff;
+                // line-height: 52px;
+            }
+            .record-top-content-text {
+                font-size: 24px;
+                font-weight: 400;
+                color: #ffffff;
+                // line-height: 24px;
+
+                margin: 16px 0 0px 0;
+                // padding-bottom: 36px;
+            }
+            .record-show {
+                width: 622px;
+                height: 16px;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, #ffffff 100%);
+                position: relative;
+                margin-top: 16px;
+                span {
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: #ffffff;
+                    line-height: 24px;
+                    position: absolute;
+                }
+                span:nth-child(1) {
+                    top: 22px;
+                    left: 50px;
+                }
+                span:nth-child(2) {
+                    top: 22px;
+                    left: 282px;
+                }
+                span:nth-child(3) {
+                    top: 22px;
+                    right: 50px;
+                }
+                .record-triangle {
+                    width: 0px;
+                    height: 0px;
+                    border: 12px solid transparent;
+                    border-top-color: #fff;
+                    position: absolute;
+                    top: -12px;
+                    left: 65px;
+                }
+                .record-triangle-normal {
+                    width: 0px;
+                    height: 0px;
+                    border: 12px solid transparent;
+                    border-top-color: #fff;
+                    position: absolute;
+                    top: -12px;
+                    left: 304px;
+                }
+                .record-triangle-abnormal {
+                    width: 0px;
+                    height: 0px;
+                    border: 12px solid transparent;
+                    border-top-color: #fff;
+                    position: absolute;
+                    top: -12px;
+                    left: 440px;
+                }
+            }
+        }
+        .record-foot-content {
+            // background: red;
+            margin-top: -10px;
+            // background: red;
+
+            .record-foot-content-title {
+                font-size: 28px;
+                font-weight: 400;
+                color: #333333;
+                line-height: 32px;
+                margin-bottom: 16px;
+            }
+            .record-foot-content-text {
+                font-size: 24px;
+                font-weight: 400;
+                color: #666666;
+                line-height: 32px;
+            }
+        }
+    }
+    .blood-suga-to {
+        margin: 82px 0 48px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .blood-sugar-title {
+            font-size: 32px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 32px;
+            // flex-shrink: 0;
+        }
+        .blood-sugar-input {
+            width: 400px;
+            height: 64px;
+            background: #f4f4f4;
+            border-radius: 40px;
+            padding: 3px 44px;
+            display: flex;
+            align-items: center;
+            .sugar-input {
+                width: 75%;
+                font-size: 24px;
+                color: #999999;
+                outline: none;
+                border: none;
+                line-height: 24px;
+                background: none;
+                height: 100%;
+            }
+            .blood-sugar-input-btn {
+                //  width: 25%;
+                flex-shrink: 0;
+                height: 40px;
+                color: #333333;
+                line-height: 24px;
+                font-size: 24px;
+                font-weight: 400;
+                border: none;
+                background: none;
+                outline: none;
+                border-left: 1px solid #d8d8d8;
+            }
+        }
+    }
+    .blood-sugar-to {
+        // margin: 0px 0 16pxpx 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .blood-sugar-title {
+            font-size: 32px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 32px;
+        }
+        .blood-sugar-text-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            overflow: hidden;
+        }
+        .blood-sugar-text-content-text {
+            width: 160px;
+            height: 64px;
+            background: #f4f4f4;
+            border-radius: 32px;
+            font-size: 24px;
+            font-weight: 400;
+            color: #333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 16px;
+            &.active {
+                color: #fb6d54;
+                border: 1px solid #fb6d54;
+            }
+        }
+
+        // .blood-sugar-text-content-text:nth-child(30) {
+        //     margin-left: -170px;
+        // }
+        // .blood-sugar-text-content-text:nth-child(31) {
+        //     margin-left: -170px;
+        // }
+    }
+    .blood-sugar-to-one {
+        // margin: 0px 0 16px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .blood-sugar-title {
+            font-size: 32px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 32px;
+        }
+        .blood-sugar-text-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            overflow: hidden;
+        }
+        .blood-sugar-text-content-text {
+            width: 160px;
+            height: 64px;
+            background: #f4f4f4;
+            border-radius: 32px;
+            font-size: 24px;
+            font-weight: 400;
+            color: #333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 16px;
+            &.active {
+                color: #fb6d54;
+                border: 1px solid #fb6d54;
+            }
+        }
+
+        .blood-sugar-text-content-text:nth-child(2) {
+            margin-left: 16px;
+        }
+        .blood-sugar-text-content-text:nth-child(3) {
+            margin-left: 16px;
+        }
+    }
+    .public-sleep-content {
+        // padding-bottom: 32px;
+    }
+    .public-sleep-data {
+        padding: 32px;
+        background: url("../../../assert/health-sleep.png") center no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 24px;
+        &.active {
+            padding: 32px;
+            background: url("../../../assert/health-sleep-active.png") center no-repeat;
+            background-size: 100% 100%;
+            margin-bottom: 24px;
+        }
+        .flex-between {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .record-title {
+            font-size: 32px;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 32px;
+        }
+        .record-time {
+            font-size: 28px;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 28px;
+        }
+        .record-sleep-title {
+            font-size: 28px;
+            font-weight: 400;
+            color: #ffffff;
+            line-height: 42px;
+            margin: 44px 0;
+        }
+        .record-top-content {
+            flex-direction: column;
+            margin-top: 32px;
+            margin-bottom: 96px;
+            .blood-pressure {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .record-content-title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: -10px;
+            }
+            .record-top-content-title {
+                font-size: 52px;
+                font-weight: 500;
+                color: #ffffff;
+                line-height: 52px;
+            }
+            .record-top-content-text {
+                font-size: 24px;
+                font-weight: 400;
+                color: #ffffff;
+                line-height: 24px;
+                margin: 16px 0 18px 0;
+            }
+        }
+        .record-foot-content {
+            // background: red;
+            margin-top: 0px;
+            // background: red;
+
+            .record-foot-content-title {
+                font-size: 28px;
+                font-weight: 400;
+                color: #333333;
+                line-height: 32px;
+                margin-bottom: 16px;
+            }
+            .record-foot-content-text {
+                font-size: 24px;
+                font-weight: 400;
+                color: #666666;
+                line-height: 32px;
+            }
+        }
+        .record-sleep-content {
+            div {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-top: 24px;
+                color: rgba(255, 255, 255, 0.7);
+                .sleep-status {
+                    color: #fff;
+                    font-size: 40px;
+                }
+                span {
+                    color: #fff;
+                    font-size: 32px;
+                    padding: 0 6px;
+                }
+            }
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-size: 28px;
+            .supplementary-content {
+                width: 100%;
+                height: auto;
+                font-size: 28px;
+                font-weight: 400;
+                color: #ffffff;
+                line-height: 42px;
+                word-wrap: break-word;
+                word-break: break-all;
+            }
+        }
+    }
+    .blood-sugar-more {
+        width: 160px;
+        height: 64px;
+        background: #f4f4f4;
+        border-radius: 32px;
+        font-size: 24px;
+        font-weight: 400;
+        color: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // margin-top: 16px;
+        margin: 16px 0 52px 0;
+    }
+}

@@ -1,0 +1,179 @@
+@import '@style/theme.scss';
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    .modal-content{
+        width: 280px;
+        height: 280px;
+        background: rgba(51, 51, 51, 0.5);
+        border-radius: 12px;
+        align-items: center;
+        flex-direction: column;
+        font-size: 32px;
+        color: $white;
+        padding-top: 48px;
+        .yes{
+            width: 104px;
+            height: 104px;
+            margin-top: 32px;
+            background: url('#{$ossHost}/answer_big_yes.png') no-repeat;
+            background-size: 100% 100%;
+            &.no{
+                transform: rotateX(180deg);
+            }
+        }
+    }
+}
+.page-hpv-answer{
+    width: 100%;
+    min-height: 100%;
+    background: linear-gradient(180deg, #FF8BA7 0%, #FFBBBB 100%);
+    align-items: center;
+    flex-direction: column;
+    .hpv-title{
+        font-size: 64px;
+        color: $white;
+        line-height: 1;
+        font-weight: bold;
+        margin: 64px 0 20px;
+    }
+    .hpv-sub-title{
+        color: $white;
+        line-height: 24px;
+        font-size: 24px;
+    }
+    .dot-list{
+        width: 622px;
+        height: 96px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 12px;
+        align-items: center;
+        justify-content: space-around;
+        margin: 64px 0 48px;
+        .dot-content{
+            align-items: center;
+        }
+        .dot{
+            margin-left: 64px;
+            width: 24px;
+            height: 24px;
+            background: $white;
+            border-radius: 50%;
+            &.selected{
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                margin-left: 40px;
+                background: url('#{$ossHost}/hpv_yes.png');
+                background-size: 100% 100%;
+                &.no{
+                    background: url('#{$ossHost}/hpv_no.png');
+                    background-size: 100% 100%;
+                }
+            }
+            &:nth-child(1){
+                margin-left: 0;
+            }
+        }
+    }
+    .question-item{
+        flex-direction: column;
+        .question{
+            width: 622px;
+            height: 196px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 12px;
+            padding: 32px;
+            line-height: 44px;
+            color: $color-333;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 44px;
+        }
+        .answer-list{
+            justify-content: space-between;
+            margin: 48px 0;
+            .answer-item{
+                width: 228px;
+                height: 96px;
+                background: #FFFFFF;
+                border-radius: 12px;
+                align-items: center;
+                justify-content: space-around;
+                color: #FD7698;
+                font-size: 32px;
+                position: relative;
+                &.no-select{
+                    background: rgba(255, 255, 255, 0.5);
+                }
+                .answer-yes{
+                    width: 24px;
+                    height: 24px;
+                    background: url('#{$ossHost}/answer_no.png');
+                    background-size: 100% 100%;
+                    position: absolute;
+                    top: 18px;
+                    right: 18px;
+                    transform: rotateX(180deg);
+                    &.answer-no{
+                        transform: rotateX(0deg);
+                    }
+                }
+            }
+        }
+        .knowledge{
+            width: 622px;
+            height: 432px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            align-items: center;
+            flex-direction: column;
+            padding: 32px;
+
+            .knowledge-title{
+                font-size: 32px;
+                color: $color-333;
+                font-weight: bold;
+                margin-bottom: 32px;
+            }
+            .knowledge-text{
+                font-size: 28px;
+                color: $color-666;
+                line-height: 44px;
+                text-align: justify
+            }
+        }
+    }
+    .action-list{
+        width: 622px;
+        align-items: center;
+        justify-content: space-between;
+        margin: 48px 0 64px;
+        .action-item{
+            width: 228px;
+            height: 96px;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 12px;
+            font-size: 32px;
+            color: #FD7698;
+            background: $white;
+            &.pre{
+                background: #FD7698;
+                color: $white;
+            }
+            &.only{
+                width: 100%;
+            }
+
+        }
+    }
+}

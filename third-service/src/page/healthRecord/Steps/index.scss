@@ -1,0 +1,101 @@
+@import '@style/theme.scss';
+.component-steps{
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 416px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    .skip{
+        font-size: 24px;
+        color: #FF5A47;
+        line-height: 24px;
+    }
+    .next{
+        width: 440px;
+        height: 88px;
+        background: linear-gradient(166deg, #FDC195 0%, #FF4638 100%);
+        border-radius: 44px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 32px;
+        color: #fff;
+        margin: 64px 0 32px ;
+        &.disable{
+            background: rgba(204, 204, 204, 0.6);
+        }
+    }
+    .back{
+        font-size: 24px;
+        color: #666;
+        line-height: 24px;
+    }
+    .tips{
+        color: #ccc;
+        font-size: 24px;
+        height: 24px;
+        line-height: 1;
+        margin: 64px 0 16px;
+    }
+    .step{
+        width: 686px;
+        height: 16px;
+        background: rgba(204, 204, 204, 0.2);
+        border-radius: 12px;
+        position: relative;
+        margin-bottom: 64px;
+        .step-content{
+            height: 16px;
+            background: #FF775D;
+            border-radius: 12px;
+            // position: absolute;
+        }
+    }
+    .modal{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-around;
+        background: rgba(51, 51, 51, 0.7);
+        .modal-content{
+            align-items: center;
+            flex-direction: column;
+            .img{
+                width: 532px;
+                height: 574px;
+                background: url('#{$ossHost}/health_bg.png') no-repeat;
+                background-size: 100% 100%;
+                padding-top: 398px;
+                .text{
+                    font-size: 32px;
+                    color: #333;
+                    text-align: center;
+                    line-height: 32px;
+                    margin-bottom: 32px;
+                }
+                .score-text{
+                    font-size: 24px;
+                    color: #333;
+                    text-align: center;
+                    .score{
+                        font-size: 32px;
+                        color: #FF5A47;
+                    }
+                }
+            }
+            .close{
+                width: 48px;
+                height: 48px;
+                border: 2px solid #FFFFFF;
+                border-radius: 50%;
+                margin-top: 64px;
+                background: url('#{$ossHost}/close_no_border.png') no-repeat center center;
+                background-size: 32px 32px;
+            }
+        }
+    }
+}
