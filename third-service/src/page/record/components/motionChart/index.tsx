@@ -27,6 +27,8 @@ const MotionChart = (props:IProps,) => {
         data.date = moment().format('YYYY-MM-DD');
       }
       healthGetSportGetTrend(data).then((res: any) => {
+        console.log(data);
+        
         const arr: { day: string; value: any;  name:string}[] = [];
         const arrTime: { day: string; value: any;  name:string}[] = [];
       //消耗能量图表
